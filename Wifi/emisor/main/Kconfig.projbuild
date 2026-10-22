@@ -1,0 +1,17 @@
+menu "WiFi sender"
+    config WIFI_SSID
+        string "WiFi SSID"
+        default ""
+    config WIFI_PASSWORD
+        string "WiFi password"
+        default ""
+    config TCP_SERVER_IP
+        string "Receiver IPv4 address"
+        default "192.168.0.223"
+    config TCP_PORT
+        int "TCP receiver port"
+        default 3333
+    config SEND_INTERVAL_MS
+        int "Message interval (ms)"
+        default 1000
+endmenu

@@ -1,0 +1,14 @@
+menu "WiFi receiver"
+    config WIFI_SSID
+        string "WiFi SSID"
+        default ""
+    config WIFI_PASSWORD
+        string "WiFi password"
+        default ""
+    config WIFI_MAX_RETRY
+        int "Maximum WiFi retries"
+        default 10
+    config TCP_PORT
+        int "TCP listening port"
+        default 3333
+endmenu

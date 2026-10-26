@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="#ffffff"/>
+  <style>
+    .title{font:700 38px Arial;fill:#17202a}.sub{font:22px Arial;fill:#455a64}
+    .h{font:700 27px Arial;fill:#17202a}.t{font:22px Arial;fill:#17202a}.s{font:18px Arial;fill:#455a64}
+    .box{stroke-width:4;rx:18}.esp{fill:#e8f1fb;stroke:#2874a6}.tl{fill:#fff4cf;stroke:#b9770e}
+    .pin{fill:#fff;stroke:#455a64;stroke-width:3;rx:8}.wire{fill:none;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+    .red{stroke:#d32f2f}.blue{stroke:#1565c0}.green{stroke:#2e7d32}.black{stroke:#263238}
+    .node{fill:#263238}.note{fill:#f7f9f9;stroke:#90a4ae;stroke-width:2;rx:14}
+  </style>
+
+  <text x="800" y="58" text-anchor="middle" class="title">Receptor VS1838B + ESP32 DevKit V1</text>
+  <text x="800" y="95" text-anchor="middle" class="sub">Conexión recomendada a 3.3 V — señal en GPIO22</text>
+
+  <!-- ESP32 -->
+  <rect x="90" y="210" width="370" height="530" class="box esp"/>
+  <text x="275" y="270" text-anchor="middle" class="h">ESP32 DevKit V1</text>
+  <text x="275" y="305" text-anchor="middle" class="s">ESP32 clásico / WROOM-32</text>
+  <rect x="155" y="350" width="240" height="250" fill="#d5dbdb" stroke="#546e7a" stroke-width="3" rx="10"/>
+  <text x="275" y="405" text-anchor="middle" class="h">PINES A USAR</text>
+  <text x="275" y="465" text-anchor="middle" class="t">3V3</text>
+  <text x="275" y="525" text-anchor="middle" class="t">GND</text>
+  <text x="275" y="585" text-anchor="middle" class="t">GPIO22</text>
+
+  <!-- TL1838 frontal -->
+  <rect x="1120" y="290" width="300" height="360" class="box tl"/>
+  <ellipse cx="1270" cy="355" rx="60" ry="38" fill="#252525" stroke="#111" stroke-width="4"/>
+  <text x="1270" y="435" text-anchor="middle" class="h">VS1838B</text>
+  <text x="1270" y="468" text-anchor="middle" class="s">vista frontal: lente hacia ti</text>
+  <text x="1270" y="505" text-anchor="middle" class="s">patas hacia abajo</text>
+  <rect x="1160" y="550" width="65" height="55" class="pin"/>
+  <rect x="1238" y="550" width="65" height="55" class="pin"/>
+  <rect x="1316" y="550" width="65" height="55" class="pin"/>
+  <text x="1192" y="586" text-anchor="middle" class="h">1</text>
+  <text x="1270" y="586" text-anchor="middle" class="h">2</text>
+  <text x="1348" y="586" text-anchor="middle" class="h">3</text>
+  <text x="1192" y="635" text-anchor="middle" class="t">OUT</text>
+  <text x="1270" y="635" text-anchor="middle" class="t">GND</text>
+  <text x="1348" y="635" text-anchor="middle" class="t">VCC</text>
+
+  <!-- exact pin callout -->
+  <rect x="1080" y="700" width="380" height="100" class="note"/>
+  <text x="1270" y="735" text-anchor="middle" class="h">Orden de pines</text>
+  <text x="1270" y="772" text-anchor="middle" class="t">1 OUT — 2 GND — 3 VCC</text>
+
+  <!-- wires, separated -->
+  <path d="M395 465 H610 V210 H1348 V550" class="wire red"/>
+  <circle cx="395" cy="465" r="8" class="node"/><circle cx="1348" cy="550" r="8" class="node"/>
+  <text x="625" y="195" class="h" fill="#d32f2f">3V3 → VCC</text>
+
+  <path d="M395 525 H560 V850 H1270 V605" class="wire blue"/>
+  <circle cx="395" cy="525" r="8" class="node"/><circle cx="1270" cy="605" r="8" class="node"/>
+  <text x="575" y="880" class="h" fill="#1565c0">GND común → GND</text>
+
+  <path d="M395 585 H720 V520 H1192 V550" class="wire green"/>
+  <circle cx="395" cy="585" r="8" class="node"/><circle cx="1192" cy="550" r="8" class="node"/>
+  <text x="735" y="500" class="h" fill="#2e7d32">GPIO22 ← OUT</text>
+
+  <!-- resistor pull-up -->
+  <path d="M800 210 V300" class="wire red"/>
+  <rect x="765" y="300" width="70" height="125" fill="#f5cba7" stroke="#8d6e63" stroke-width="3" rx="8"/>
+  <path d="M800 425 V520" class="wire green"/>
+  <text x="860" y="345" class="h">R1</text>
+  <text x="860" y="380" class="t">10 kΩ</text>
+  <text x="860" y="415" class="s">OUT a 3V3</text>
+
+  <!-- capacitor -->
+  <path d="M960 210 V375" class="wire red"/>
+  <line x1="910" y1="375" x2="1010" y2="375" stroke="#263238" stroke-width="7"/>
+  <line x1="910" y1="405" x2="1010" y2="405" stroke="#263238" stroke-width="7"/>
+  <path d="M960 405 V850" class="wire blue"/>
+  <text x="1030" y="365" class="h">C1</text>
+  <text x="1030" y="402" class="t">47 µF</text>
+  <text x="1030" y="438" class="s">electrolítico</text>
+  <text x="930" y="365" class="h" fill="#d32f2f">+</text>
+  <text x="930" y="440" class="h" fill="#1565c0">−</text>
+
+  <!-- instructions -->
+  <rect x="90" y="910" width="1370" height="60" class="note"/>
+  <text x="115" y="948" class="t">Conecta el capacitor con + a 3V3 y − a GND. No uses 5 V: OUT debe quedar máximo en 3.3 V para proteger el ESP32.</text>
+</svg>

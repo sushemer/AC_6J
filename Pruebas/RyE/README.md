@@ -18,6 +18,8 @@ Para cada uno de los tres controles, guardar estas cinco capturas:
 | `controlN_on.txt` | Aire encendido |
 | `controlN_off.txt` | Aire apagado |
 | `controlN_auto.txt` | Modo automatico |
+| `controlN_temp_up.txt` | Boton de aumentar temperatura |
+| `controlN_temp_down.txt` | Boton de disminuir temperatura |
 | `controlN_temp_base.txt` | Temperatura elegida, por ejemplo 20 C |
 | `controlN_temp_siguiente.txt` | Un grado arriba, por ejemplo 21 C |
 
@@ -53,7 +55,7 @@ Set-ExecutionPolicy -Scope Process Bypass
 ```
 
 Repetir cambiando `control1` por `control2` o `control3`, y `on` por `off`,
-`auto`, `temp_base` y `temp_siguiente`. El script guarda los bloques en
+`auto`, `temp_up`, `temp_down`, `temp_base` y `temp_siguiente`. El script guarda los bloques en
 `Receptor/capturas/`.
 
 ## 3. Emisor

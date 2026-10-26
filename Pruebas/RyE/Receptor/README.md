@@ -39,7 +39,7 @@ Valores válidos:
 
 ```text
 Control: control1, control2, control3
-Accion:  on, off, auto, temp_base, temp_siguiente
+Accion:  on, off, auto, temp_up, temp_down, temp_base, temp_siguiente
 ```
 
 El archivo se guarda en `Receptor/capturas/`. Para cada control se recomienda

@@ -2,7 +2,7 @@ param(
     [Parameter(Mandatory = $true)] [string]$Port,
     [int]$BaudRate = 115200,
     [Parameter(Mandatory = $true)] [ValidateSet('control1','control2','control3')] [string]$Control,
-    [Parameter(Mandatory = $true)] [ValidateSet('on','off','auto','temp_base','temp_siguiente')] [string]$Accion,
+    [Parameter(Mandatory = $true)] [ValidateSet('on','off','auto','temp_up','temp_down','temp_base','temp_siguiente')] [string]$Accion,
     [string]$OutputDirectory = (Join-Path $PSScriptRoot 'capturas')
 )
 

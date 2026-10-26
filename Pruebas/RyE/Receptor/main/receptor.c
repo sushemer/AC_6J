@@ -69,8 +69,9 @@ static void IRAM_ATTR ir_gpio_isr(void *arg){
     last_level = level;
 }
 
-static void print_capture(void){
-    printf("static const rmt_symbol_word_t ir_signal[] = {\n");
+static void print_capture_array(const char *name, bool ready_for_npn)
+{
+    printf("static const rmt_symbol_word_t %s[] = {\n", name);
 
     size_t symbols = (saved_count + 1) / 2;
     for (size_t i = 0; i < symbols; ++i) {
@@ -84,11 +85,34 @@ static void print_capture(void){
             d1 = saved_duration[p1];
             l1 = saved_level[p1];
         }
+
+        /*
+         * El VS1838B entrega la marca IR en nivel bajo. El emisor con
+         * transistor NPN necesita la marca en HIGH y el espacio en LOW.
+         * En la primera pareja la captura puede comenzar durante el estado
+         * inactivo; por eso se normalizan ambos niveles para el emisor.
+         */
+        if (ready_for_npn) {
+            l0 = 1;
+            l1 = 0;
+        }
+
         printf("    {.duration0 = %u, .level0 = %u, .duration1 = %u, .level1 = %u},\n",
                (unsigned)d0, l0, (unsigned)d1, l1);
     }
-    printf("};\nstatic const size_t ir_signal_count = %u;\n",
+    printf("};\nstatic const size_t %s_count = %u;\n",
+           name,
            (unsigned)symbols);
+}
+
+static void print_capture(void)
+{
+    printf("\n=== VERSION ORIGINAL DEL VS1838B ===\n");
+    print_capture_array("ir_signal_raw", false);
+
+    printf("\n=== VERSION LISTA PARA EMISOR NPN ===\n");
+    print_capture_array("ir_signal_npn", true);
+
     printf("// Pulsos capturados: %u\n", (unsigned)saved_count);
     printf("// Fin de captura\n\n");
 }

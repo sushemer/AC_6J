@@ -1,0 +1,992 @@
+﻿Timestamp,Device,Level,Sequence,Message,Event,SourceIP,Bytes,RSSI_dBm,WiFiQuality_percent,WiFiChannel
+2026-10-22T19:55:35.032,receptor,INFO,,ets Jul 29 2019 12:21:46,log,,,,,
+2026-10-22T19:55:35.033,receptor,INFO,,,log,,,,,
+2026-10-22T19:55:35.038,receptor,INFO,,"rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)",log,,,,,
+2026-10-22T19:55:35.038,receptor,INFO,,"configsip: 0, SPIWP:0xee",log,,,,,
+2026-10-22T19:55:35.044,receptor,INFO,,"clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00",log,,,,,
+2026-10-22T19:55:35.049,receptor,INFO,,"mode:DIO, clock div:2",log,,,,,
+2026-10-22T19:55:35.049,receptor,INFO,,"load:0x3fff0030,len:6384",log,,,,,
+2026-10-22T19:55:35.054,receptor,INFO,,"load:0x40078000,len:15916",log,,,,,
+2026-10-22T19:55:35.054,receptor,INFO,,"load:0x40080400,len:3920",log,,,,,
+2026-10-22T19:55:35.056,receptor,INFO,,entry 0x40080644,log,,,,,
+2026-10-22T19:55:39.219,receptor,INFO,,I (54) boot: ESP-IDF -128-NOTFOUND 2nd stage bootloader,log,,,,,
+2026-10-22T19:55:39.220,receptor,INFO,,I (54) boot: compile time Oct 22 2026 19:10:28,log,,,,,
+2026-10-22T19:55:39.220,receptor,INFO,,I (54) boot: Multicore bootloader,log,,,,,
+2026-10-22T19:55:39.221,receptor,INFO,,I (57) boot: chip revision: v3.1,log,,,,,
+2026-10-22T19:55:39.221,receptor,INFO,,I (60) boot.esp32: SPI Speed      : 40MHz,log,,,,,
+2026-10-22T19:55:39.222,receptor,INFO,,I (63) boot.esp32: SPI Mode       : DIO,log,,,,,
+2026-10-22T19:55:39.222,receptor,INFO,,I (67) boot.esp32: SPI Flash Size : 2MB,log,,,,,
+2026-10-22T19:55:39.223,receptor,WARN,,W (70) boot.esp32: PRO CPU has been reset by WDT,log,,,,,
+2026-10-22T19:55:39.223,receptor,WARN,,W (75) boot.esp32: WDT rst info: PRO CPU PC=0x4012ac2e,log,,,,,
+2026-10-22T19:55:39.224,receptor,WARN,,W (80) boot.esp32: WDT rst info: APP CPU PC=0x400873da (waiti mode),log,,,,,
+2026-10-22T19:55:40.474,receptor,INFO,,I (86) boot: Enabling RNG early entropy source...,log,,,,,
+2026-10-22T19:55:40.475,receptor,INFO,,I (90) boot: Partition Table:,log,,,,,
+2026-10-22T19:55:40.476,receptor,INFO,,I (93) boot: ## Label            Usage          Type ST Offset   Length,log,,,,,
+2026-10-22T19:55:40.476,receptor,INFO,,I (99) boot:  0 nvs              WiFi data        01 02 00009000 00006000,log,,,,,
+2026-10-22T19:55:40.477,receptor,INFO,,I (106) boot:  1 phy_init         RF data          01 01 0000f000 00001000,log,,,,,
+2026-10-22T19:55:40.478,receptor,INFO,,I (112) boot:  2 factory          factory app      00 00 00010000 00100000,log,,,,,
+2026-10-22T19:55:40.478,receptor,INFO,,I (119) boot: End of partition table,log,,,,,
+2026-10-22T19:55:40.479,receptor,INFO,,I (122) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1959ch (103836) map,log,,,,,
+2026-10-22T19:55:40.480,receptor,INFO,,I (165) esp_image: segment 1: paddr=000295c4 vaddr=3ffb0000 size=03f04h ( 16132) load,log,,,,,
+2026-10-22T19:55:40.481,receptor,INFO,,I (171) esp_image: segment 2: paddr=0002d4d0 vaddr=40080000 size=02b48h ( 11080) load,log,,,,,
+2026-10-22T19:55:41.754,receptor,INFO,,I (176) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=839e8h (539112) map,log,,,,,
+2026-10-22T19:55:41.755,receptor,INFO,,I (361) esp_image: segment 4: paddr=000b3a10 vaddr=40082b48 size=15454h ( 87124) load,log,,,,,
+2026-10-22T19:55:41.755,receptor,INFO,,I (395) esp_image: segment 5: paddr=000c8e6c vaddr=50000000 size=00020h (    32) load,log,,,,,
+2026-10-22T19:55:43.485,receptor,INFO,,ets Jul 29 2019 12:21:46,log,,,,,
+2026-10-22T19:55:43.485,receptor,INFO,,,log,,,,,
+2026-10-22T19:55:43.491,receptor,INFO,,"rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)",log,,,,,
+2026-10-22T19:55:43.491,receptor,INFO,,"configsip: 0, SPIWP:0xee",log,,,,,
+2026-10-22T19:55:43.496,receptor,INFO,,"clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00",log,,,,,
+2026-10-22T19:55:43.502,receptor,INFO,,"mode:DIO, clock div:2",log,,,,,
+2026-10-22T19:55:43.510,receptor,INFO,,"load:0x3fff0030,len:6384",log,,,,,
+2026-10-22T19:55:44.782,receptor,INFO,,"load:0x40078000,len:15916",log,,,,,
+2026-10-22T19:55:44.783,receptor,INFO,,"load:0x40080400,len:3920",log,,,,,
+2026-10-22T19:55:44.783,receptor,INFO,,entry 0x40080644,log,,,,,
+2026-10-22T19:55:44.783,receptor,INFO,,I (28) boot: ESP-IDF -128-NOTFOUND 2nd stage bootloader,log,,,,,
+2026-10-22T19:55:44.784,receptor,INFO,,I (28) boot: compile time Oct 22 2026 19:10:28,log,,,,,
+2026-10-22T19:55:44.784,receptor,INFO,,I (28) boot: Multicore bootloader,log,,,,,
+2026-10-22T19:55:44.785,receptor,INFO,,I (30) boot: chip revision: v3.1,log,,,,,
+2026-10-22T19:55:44.787,receptor,INFO,,I (33) boot.esp32: SPI Speed      : 40MHz,log,,,,,
+2026-10-22T19:55:44.787,receptor,INFO,,I (36) boot.esp32: SPI Mode       : DIO,log,,,,,
+2026-10-22T19:55:44.788,receptor,INFO,,I (40) boot.esp32: SPI Flash Size : 2MB,log,,,,,
+2026-10-22T19:55:46.064,receptor,INFO,,I (43) boot: Enabling RNG early entropy source...,log,,,,,
+2026-10-22T19:55:46.065,receptor,INFO,,I (48) boot: Partition Table:,log,,,,,
+2026-10-22T19:55:46.067,receptor,INFO,,I (50) boot: ## Label            Usage          Type ST Offset   Length,log,,,,,
+2026-10-22T19:55:46.068,receptor,INFO,,I (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000,log,,,,,
+2026-10-22T19:55:46.068,receptor,INFO,,I (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000,log,,,,,
+2026-10-22T19:55:46.069,receptor,INFO,,I (70) boot:  2 factory          factory app      00 00 00010000 00100000,log,,,,,
+2026-10-22T19:55:46.070,receptor,INFO,,I (76) boot: End of partition table,log,,,,,
+2026-10-22T19:55:46.072,receptor,INFO,,I (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1959ch (103836) map,log,,,,,
+2026-10-22T19:55:46.074,receptor,INFO,,I (123) esp_image: segment 1: paddr=000295c4 vaddr=3ffb0000 size=03f04h ( 16132) load,log,,,,,
+2026-10-22T19:55:46.075,receptor,INFO,,I (129) esp_image: segment 2: paddr=0002d4d0 vaddr=40080000 size=02b48h ( 11080) load,log,,,,,
+2026-10-22T19:55:47.323,receptor,INFO,,I (133) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=839e8h (539112) map,log,,,,,
+2026-10-22T19:55:47.324,receptor,INFO,,I (318) esp_image: segment 4: paddr=000b3a10 vaddr=40082b48 size=15454h ( 87124) load,log,,,,,
+2026-10-22T19:55:47.324,receptor,INFO,,I (352) esp_image: segment 5: paddr=000c8e6c vaddr=50000000 size=00020h (    32) load,log,,,,,
+2026-10-22T19:55:47.325,receptor,INFO,,I (364) boot: Loaded app from partition at offset 0x10000,log,,,,,
+2026-10-22T19:55:47.326,receptor,INFO,,I (364) boot: Disabling RNG early entropy source...,log,,,,,
+2026-10-22T19:55:47.326,receptor,INFO,,I (375) cpu_start: Multicore app,log,,,,,
+2026-10-22T19:55:47.327,receptor,INFO,,I (383) cpu_start: GPIO 3 and 1 are used as console UART I/O pins,log,,,,,
+2026-10-22T19:55:47.327,receptor,INFO,,I (383) cpu_start: Pro cpu start user code,log,,,,,
+2026-10-22T19:55:47.327,receptor,INFO,,I (383) cpu_start: cpu freq: 160000000 Hz,log,,,,,
+2026-10-22T19:55:47.328,receptor,INFO,,I (385) app_init: Application information:,log,,,,,
+2026-10-22T19:55:48.569,receptor,INFO,,I (389) app_init: Project name:     wifi_receptor,log,,,,,
+2026-10-22T19:55:48.570,receptor,INFO,,I (393) app_init: App version:      1,log,,,,,
+2026-10-22T19:55:48.570,receptor,INFO,,I (397) app_init: Compile time:     Oct 22 2026 19:26:46,log,,,,,
+2026-10-22T19:55:48.571,receptor,INFO,,I (402) app_init: ELF file SHA256:  110425e81...,log,,,,,
+2026-10-22T19:55:48.572,receptor,INFO,,I (406) app_init: ESP-IDF:          -128-NOTFOUND,log,,,,,
+2026-10-22T19:55:48.572,receptor,INFO,,I (411) efuse_init: Min chip rev:     v0.0,log,,,,,
+2026-10-22T19:55:48.572,receptor,INFO,,I (414) efuse_init: Max chip rev:     v3.99 ,log,,,,,
+2026-10-22T19:55:48.573,receptor,INFO,,I (418) efuse_init: Chip rev:         v3.1,log,,,,,
+2026-10-22T19:55:48.574,receptor,INFO,,I (422) heap_init: Initializing. RAM available for dynamic allocation:,log,,,,,
+2026-10-22T19:55:48.575,receptor,INFO,,I (429) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM,log,,,,,
+2026-10-22T19:55:49.816,receptor,INFO,,I (434) heap_init: At 3FFB8230 len 00027DD0 (159 KiB): DRAM,log,,,,,
+2026-10-22T19:55:49.816,receptor,INFO,,I (439) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM,log,,,,,
+2026-10-22T19:55:49.817,receptor,INFO,,I (444) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM,log,,,,,
+2026-10-22T19:55:49.818,receptor,INFO,,I (450) heap_init: At 40097F9C len 00008064 (32 KiB): IRAM,log,,,,,
+2026-10-22T19:55:49.819,receptor,WARN,,"W (456) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig",log,,,,,
+2026-10-22T19:55:49.819,receptor,INFO,,I (468) spi_flash: detected chip: generic,log,,,,,
+2026-10-22T19:55:49.820,receptor,INFO,,I (472) spi_flash: flash io: dio,log,,,,,
+2026-10-22T19:55:49.821,receptor,WARN,,W (475) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.,log,,,,,
+2026-10-22T19:55:49.822,receptor,INFO,,I (488) main_task: Started on CPU0,log,,,,,
+2026-10-22T19:55:49.823,receptor,INFO,,I (498) main_task: Calling app_main(),log,,,,,
+2026-10-22T19:55:51.080,receptor,INFO,,"I (528) wifi:wifi driver task: 3ffc0198, prio:23, stack:6656, core=0",log,,,,,
+2026-10-22T19:55:51.080,receptor,INFO,,I (538) wifi:wifi firmware version: ee91c8c,log,,,,,
+2026-10-22T19:55:51.081,receptor,INFO,,I (538) wifi:wifi certification version: v7.0,log,,,,,
+2026-10-22T19:55:51.082,receptor,INFO,,I (538) wifi:config NVS flash: enabled,log,,,,,
+2026-10-22T19:55:51.082,receptor,INFO,,I (538) wifi:config nano formatting: disabled,log,,,,,
+2026-10-22T19:55:51.085,receptor,INFO,,I (548) wifi:Init data frame dynamic rx buffer num: 32,log,,,,,
+2026-10-22T19:55:51.086,receptor,INFO,,I (548) wifi:Init static rx mgmt buffer num: 5,log,,,,,
+2026-10-22T19:55:51.086,receptor,INFO,,I (548) wifi:Init management short buffer num: 32,log,,,,,
+2026-10-22T19:55:51.087,receptor,INFO,,I (558) wifi:Init dynamic tx buffer num: 32,log,,,,,
+2026-10-22T19:55:51.087,receptor,INFO,,I (558) wifi:Init static rx buffer size: 1600,log,,,,,
+2026-10-22T19:55:52.312,receptor,INFO,,I (568) wifi:Init static rx buffer num: 10,log,,,,,
+2026-10-22T19:55:52.313,receptor,INFO,,I (568) wifi:Init dynamic rx buffer num: 32,log,,,,,
+2026-10-22T19:55:52.313,receptor,INFO,,I (578) wifi_init: rx ba win: 6,log,,,,,
+2026-10-22T19:55:52.317,receptor,INFO,,I (578) wifi_init: accept mbox: 6,log,,,,,
+2026-10-22T19:55:52.319,receptor,INFO,,I (578) wifi_init: tcpip mbox: 32,log,,,,,
+2026-10-22T19:55:52.320,receptor,INFO,,I (578) wifi_init: udp mbox: 6,log,,,,,
+2026-10-22T19:55:52.320,receptor,INFO,,I (588) wifi_init: tcp mbox: 6,log,,,,,
+2026-10-22T19:55:52.321,receptor,INFO,,I (588) wifi_init: tcp tx win: 5760,log,,,,,
+2026-10-22T19:55:52.321,receptor,INFO,,I (588) wifi_init: tcp rx win: 5760,log,,,,,
+2026-10-22T19:55:52.321,receptor,INFO,,I (598) wifi_init: tcp mss: 1440,log,,,,,
+2026-10-22T19:55:53.594,receptor,INFO,,I (598) wifi_init: WiFi IRAM OP enabled,log,,,,,
+2026-10-22T19:55:53.596,receptor,INFO,,I (598) wifi_init: WiFi RX IRAM OP enabled,log,,,,,
+2026-10-22T19:55:53.597,receptor,INFO,,I (608) wifi_receptor: Configuracion WiFi cargada; SSID=HP-MFP509073,log,,,,,
+2026-10-22T19:55:53.599,receptor,INFO,,I (608) wifi_receptor: MAC WiFi del receptor: D4:E9:F4:66:B3:C4,log,,,,,
+2026-10-22T19:55:53.600,receptor,INFO,,"I (618) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06",log,,,,,
+2026-10-22T19:55:53.600,receptor,INFO,,I (708) wifi:mode : sta (d4:e9:f4:66:b3:c4),log,,,,,
+2026-10-22T19:55:53.601,receptor,INFO,,I (708) wifi:enable tsf,log,,,,,
+2026-10-22T19:55:53.601,receptor,INFO,,I (708) wifi_receptor: Iniciando conexion WiFi al SSID: HP-MFP509073,log,,,,,
+2026-10-22T19:55:53.602,receptor,INFO,,I (708) wifi_receptor: esp_wifi_connect() inicial: ESP_OK,log,,,,,
+2026-10-22T19:55:53.603,receptor,INFO,,"I (718) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0",log,,,,,
+2026-10-22T19:55:54.852,receptor,INFO,,I (718) wifi:state: init -> auth (0xb0),log,,,,,
+2026-10-22T19:55:54.852,receptor,INFO,,I (728) wifi:state: auth -> assoc (0x0),log,,,,,
+2026-10-22T19:55:54.853,receptor,INFO,,I (728) wifi:state: assoc -> run (0x10),log,,,,,
+2026-10-22T19:55:54.854,receptor,INFO,,"I (738) wifi:<ba-add>idx:0 (ifx:0, c8:d7:19:b7:90:98), tid:0, ssn:0, winSize:64",log,,,,,
+2026-10-22T19:55:54.855,receptor,INFO,,"I (758) wifi:connected with HP-MFP509073, aid = 2, channel 1, BW20, bssid = c8:d7:19:b7:90:98",log,,,,,
+2026-10-22T19:55:54.855,receptor,INFO,,"I (758) wifi:security: WPA2-PSK, phy: bgn, rssi: -41",log,,,,,
+2026-10-22T19:55:54.856,receptor,INFO,,"I (768) wifi:pm start, type: 1",log,,,,,
+2026-10-22T19:55:54.856,receptor,INFO,,,log,,,,,
+2026-10-22T19:55:54.856,receptor,INFO,,"I (768) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us",log,,,,,
+2026-10-22T19:55:54.857,receptor,INFO,,"I (778) wifi:AP's beacon interval = 102400 us, DTIM period = 1",log,,,,,
+2026-10-22T19:55:56.119,receptor,INFO,,"I (3448) esp_netif_handlers: sta ip: 192.168.1.30, mask: 255.255.255.224, gw: 192.168.1.1",ip_received,192.168.1.30,,,,
+2026-10-22T19:55:56.121,receptor,INFO,,I (3448) wifi_receptor: IP recibida: 192.168.1.30,ip_received,192.168.1.30,,,,
+2026-10-22T19:55:56.122,receptor,INFO,,I (3448) wifi_receptor: Conectado al WiFi; esperando emisor TCP en puerto 3333,log,,,,,
+2026-10-22T19:55:56.123,receptor,INFO,,I (3458) main_task: Returned from app_main(),log,,,,,
+2026-10-22T19:55:56.124,receptor,INFO,,I (3458) wifi_receptor: Receptor listo; esperando conexion TCP,log,,,,,
+2026-10-22T19:56:08.321,receptor,INFO,,I (24828) wifi_receptor: Emisor conectado desde 192.168.1.2,tcp_connected,192.168.1.2,,,,
+2026-10-22T19:56:08.332,receptor,INFO,,"I (24828) wifi_receptor: Enlace WiFi: RSSI=-41 dBm, calidad=100%, canal=1",wifi_quality,,,-41,100,1
+2026-10-22T19:56:08.335,receptor,INFO,820,I (24838) wifi_receptor: RX 26 bytes: SEQ=820;PAYLOAD=wifi-test,rx,,26,-41,100,1
+2026-10-22T19:56:08.336,receptor,INFO,,,log,,,-41,100,1
+2026-10-22T19:56:09.457,receptor,INFO,,"I (25958) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:56:10.646,receptor,INFO,821,I (25958) wifi_receptor: RX 26 bytes: SEQ=821;PAYLOAD=wifi-test,rx,,26,-45,100,1
+2026-10-22T19:56:10.646,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:56:10.646,receptor,INFO,,"I (26978) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:56:10.647,receptor,INFO,822,I (26978) wifi_receptor: RX 26 bytes: SEQ=822;PAYLOAD=wifi-test,rx,,26,-45,100,1
+2026-10-22T19:56:10.648,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:56:11.508,receptor,INFO,,"I (28008) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T19:56:11.509,receptor,INFO,823,I (28018) wifi_receptor: RX 26 bytes: SEQ=823;PAYLOAD=wifi-test,rx,,26,-46,100,1
+2026-10-22T19:56:11.510,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T19:56:12.525,receptor,INFO,,"I (29028) wifi_receptor: Enlace WiFi: RSSI=-48 dBm, calidad=100%, canal=1",wifi_quality,,,-48,100,1
+2026-10-22T19:56:12.526,receptor,INFO,824,I (29028) wifi_receptor: RX 26 bytes: SEQ=824;PAYLOAD=wifi-test,rx,,26,-48,100,1
+2026-10-22T19:56:14.177,receptor,INFO,,,log,,,-48,100,1
+2026-10-22T19:56:14.178,receptor,INFO,,"I (30058) wifi_receptor: Enlace WiFi: RSSI=-48 dBm, calidad=100%, canal=1",wifi_quality,,,-48,100,1
+2026-10-22T19:56:14.181,receptor,INFO,825,I (30058) wifi_receptor: RX 26 bytes: SEQ=825;PAYLOAD=wifi-test,rx,,26,-48,100,1
+2026-10-22T19:56:14.181,receptor,INFO,,,log,,,-48,100,1
+2026-10-22T19:56:14.573,receptor,INFO,,"I (31078) wifi_receptor: Enlace WiFi: RSSI=-50 dBm, calidad=100%, canal=1",wifi_quality,,,-50,100,1
+2026-10-22T19:56:14.574,receptor,INFO,826,I (31078) wifi_receptor: RX 26 bytes: SEQ=826;PAYLOAD=wifi-test,rx,,26,-50,100,1
+2026-10-22T19:56:14.574,receptor,INFO,,,log,,,-50,100,1
+2026-10-22T19:56:15.599,receptor,INFO,,"I (32108) wifi_receptor: Enlace WiFi: RSSI=-38 dBm, calidad=100%, canal=1",wifi_quality,,,-38,100,1
+2026-10-22T19:56:15.601,receptor,INFO,827,I (32108) wifi_receptor: RX 26 bytes: SEQ=827;PAYLOAD=wifi-test,rx,,26,-38,100,1
+2026-10-22T19:56:15.604,receptor,INFO,,,log,,,-38,100,1
+2026-10-22T19:56:16.898,receptor,INFO,,"I (33128) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:56:16.898,receptor,INFO,828,I (33128) wifi_receptor: RX 26 bytes: SEQ=828;PAYLOAD=wifi-test,rx,,26,-45,100,1
+2026-10-22T19:56:16.899,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:56:17.645,receptor,INFO,,"I (34148) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:56:17.646,receptor,INFO,829,I (34148) wifi_receptor: RX 26 bytes: SEQ=829;PAYLOAD=wifi-test,rx,,26,-45,100,1
+2026-10-22T19:56:17.646,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:56:18.669,receptor,INFO,,"I (35178) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T19:56:18.671,receptor,INFO,830,I (35178) wifi_receptor: RX 26 bytes: SEQ=830;PAYLOAD=wifi-test,rx,,26,-46,100,1
+2026-10-22T19:56:18.672,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T19:56:19.692,receptor,INFO,,"I (36198) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:56:20.994,receptor,INFO,831,I (36198) wifi_receptor: RX 26 bytes: SEQ=831;PAYLOAD=wifi-test,rx,,26,-45,100,1
+2026-10-22T19:56:20.995,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:56:20.995,receptor,INFO,,"I (37218) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T19:56:20.996,receptor,INFO,832,I (37218) wifi_receptor: RX 26 bytes: SEQ=832;PAYLOAD=wifi-test,rx,,26,-46,100,1
+2026-10-22T19:56:20.997,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T19:56:21.741,receptor,INFO,,"I (38248) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:56:21.742,receptor,INFO,833,I (38248) wifi_receptor: RX 26 bytes: SEQ=833;PAYLOAD=wifi-test,rx,,26,-45,100,1
+2026-10-22T19:56:21.742,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:56:22.867,receptor,INFO,,"I (39368) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:56:22.868,receptor,INFO,834,I (39368) wifi_receptor: RX 26 bytes: SEQ=834;PAYLOAD=wifi-test,rx,,26,-45,100,1
+2026-10-22T19:56:24.174,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:56:24.176,receptor,INFO,,"I (40498) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:56:24.176,receptor,INFO,835,I (40508) wifi_receptor: RX 26 bytes: SEQ=835;PAYLOAD=wifi-test,rx,,26,-45,100,1
+2026-10-22T19:56:24.176,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:56:25.017,receptor,INFO,,"I (41518) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:56:25.019,receptor,INFO,836,I (41528) wifi_receptor: RX 26 bytes: SEQ=836;PAYLOAD=wifi-test,rx,,26,-45,100,1
+2026-10-22T19:56:25.019,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:56:26.085,receptor,INFO,,"I (42588) wifi_receptor: Enlace WiFi: RSSI=-42 dBm, calidad=100%, canal=1",wifi_quality,,,-42,100,1
+2026-10-22T19:56:26.086,receptor,INFO,837,I (42588) wifi_receptor: RX 26 bytes: SEQ=837;PAYLOAD=wifi-test,rx,,26,-42,100,1
+2026-10-22T19:56:26.086,receptor,INFO,,,log,,,-42,100,1
+2026-10-22T19:56:27.397,receptor,INFO,,"I (43668) wifi_receptor: Enlace WiFi: RSSI=-43 dBm, calidad=100%, canal=1",wifi_quality,,,-43,100,1
+2026-10-22T19:56:27.398,receptor,INFO,838,I (43678) wifi_receptor: RX 26 bytes: SEQ=838;PAYLOAD=wifi-test,rx,,26,-43,100,1
+2026-10-22T19:56:27.398,receptor,INFO,,,log,,,-43,100,1
+2026-10-22T19:56:28.294,receptor,INFO,,"I (44798) wifi_receptor: Enlace WiFi: RSSI=-37 dBm, calidad=100%, canal=1",wifi_quality,,,-37,100,1
+2026-10-22T19:56:28.298,receptor,INFO,839,I (44798) wifi_receptor: RX 26 bytes: SEQ=839;PAYLOAD=wifi-test,rx,,26,-37,100,1
+2026-10-22T19:56:28.302,receptor,INFO,,,log,,,-37,100,1
+2026-10-22T19:56:29.422,receptor,INFO,,"I (45928) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T19:56:29.423,receptor,INFO,840,I (45928) wifi_receptor: RX 26 bytes: SEQ=840;PAYLOAD=wifi-test,rx,,26,-44,100,1
+2026-10-22T19:56:29.423,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T19:56:30.448,receptor,INFO,,"I (46958) wifi_receptor: Enlace WiFi: RSSI=-39 dBm, calidad=100%, canal=1",wifi_quality,,,-39,100,1
+2026-10-22T19:56:31.780,receptor,INFO,841,I (46958) wifi_receptor: RX 26 bytes: SEQ=841;PAYLOAD=wifi-test,rx,,26,-39,100,1
+2026-10-22T19:56:31.780,receptor,INFO,,,log,,,-39,100,1
+2026-10-22T19:56:31.781,receptor,INFO,,"I (48078) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T19:56:31.781,receptor,INFO,842,I (48078) wifi_receptor: RX 26 bytes: SEQ=842;PAYLOAD=wifi-test,rx,,26,-44,100,1
+2026-10-22T19:56:31.781,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T19:56:32.697,receptor,INFO,,"I (49198) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:56:32.699,receptor,INFO,843,I (49208) wifi_receptor: RX 26 bytes: SEQ=843;PAYLOAD=wifi-test,rx,,26,-45,100,1
+2026-10-22T19:56:32.699,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:56:33.722,receptor,INFO,,"I (50228) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T19:56:33.723,receptor,INFO,844,I (50228) wifi_receptor: RX 26 bytes: SEQ=844;PAYLOAD=wifi-test,rx,,26,-46,100,1
+2026-10-22T19:56:35.032,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T19:56:35.033,receptor,INFO,,"I (51248) wifi_receptor: Enlace WiFi: RSSI=-43 dBm, calidad=100%, canal=1",wifi_quality,,,-43,100,1
+2026-10-22T19:56:35.034,receptor,INFO,845,I (51248) wifi_receptor: RX 26 bytes: SEQ=845;PAYLOAD=wifi-test,rx,,26,-43,100,1
+2026-10-22T19:56:35.034,receptor,INFO,,,log,,,-43,100,1
+2026-10-22T19:56:35.872,receptor,INFO,,"I (52378) wifi_receptor: Enlace WiFi: RSSI=-43 dBm, calidad=100%, canal=1",wifi_quality,,,-43,100,1
+2026-10-22T19:56:35.873,receptor,INFO,846,I (52378) wifi_receptor: RX 26 bytes: SEQ=846;PAYLOAD=wifi-test,rx,,26,-43,100,1
+2026-10-22T19:56:35.873,receptor,INFO,,,log,,,-43,100,1
+2026-10-22T19:56:37.000,receptor,INFO,,"I (53508) wifi_receptor: Enlace WiFi: RSSI=-43 dBm, calidad=100%, canal=1",wifi_quality,,,-43,100,1
+2026-10-22T19:56:37.003,receptor,INFO,847,I (53508) wifi_receptor: RX 26 bytes: SEQ=847;PAYLOAD=wifi-test,rx,,26,-43,100,1
+2026-10-22T19:56:37.004,receptor,INFO,,,log,,,-43,100,1
+2026-10-22T19:56:38.367,receptor,INFO,,"I (54658) wifi_receptor: Enlace WiFi: RSSI=-49 dBm, calidad=100%, canal=1",wifi_quality,,,-49,100,1
+2026-10-22T19:56:38.368,receptor,INFO,848,I (54658) wifi_receptor: RX 26 bytes: SEQ=848;PAYLOAD=wifi-test,rx,,26,-49,100,1
+2026-10-22T19:56:38.368,receptor,INFO,,,log,,,-49,100,1
+2026-10-22T19:56:39.353,receptor,INFO,,"I (55858) wifi_receptor: Enlace WiFi: RSSI=-43 dBm, calidad=100%, canal=1",wifi_quality,,,-43,100,1
+2026-10-22T19:56:39.354,receptor,INFO,849,I (55858) wifi_receptor: RX 26 bytes: SEQ=849;PAYLOAD=wifi-test,rx,,26,-43,100,1
+2026-10-22T19:56:39.355,receptor,INFO,,,log,,,-43,100,1
+2026-10-22T19:56:40.480,receptor,INFO,,"I (56988) wifi_receptor: Enlace WiFi: RSSI=-40 dBm, calidad=100%, canal=1",wifi_quality,,,-40,100,1
+2026-10-22T19:56:40.481,receptor,INFO,850,I (56988) wifi_receptor: RX 26 bytes: SEQ=850;PAYLOAD=wifi-test,rx,,26,-40,100,1
+2026-10-22T19:56:40.481,receptor,INFO,,,log,,,-40,100,1
+2026-10-22T19:56:41.507,receptor,INFO,,"I (58008) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:56:42.851,receptor,INFO,851,I (58008) wifi_receptor: RX 26 bytes: SEQ=851;PAYLOAD=wifi-test,rx,,26,-45,100,1
+2026-10-22T19:56:42.852,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:56:42.853,receptor,INFO,,"I (59038) wifi_receptor: Enlace WiFi: RSSI=-42 dBm, calidad=100%, canal=1",wifi_quality,,,-42,100,1
+2026-10-22T19:56:42.853,receptor,INFO,852,I (59038) wifi_receptor: RX 26 bytes: SEQ=852;PAYLOAD=wifi-test,rx,,26,-42,100,1
+2026-10-22T19:56:42.854,receptor,INFO,,,log,,,-42,100,1
+2026-10-22T19:56:43.552,receptor,INFO,,"I (60058) wifi_receptor: Enlace WiFi: RSSI=-43 dBm, calidad=100%, canal=1",wifi_quality,,,-43,100,1
+2026-10-22T19:56:43.553,receptor,INFO,853,I (60058) wifi_receptor: RX 26 bytes: SEQ=853;PAYLOAD=wifi-test,rx,,26,-43,100,1
+2026-10-22T19:56:43.553,receptor,INFO,,,log,,,-43,100,1
+2026-10-22T19:56:44.577,receptor,INFO,,"I (61078) wifi_receptor: Enlace WiFi: RSSI=-38 dBm, calidad=100%, canal=1",wifi_quality,,,-38,100,1
+2026-10-22T19:56:44.578,receptor,INFO,854,I (61078) wifi_receptor: RX 26 bytes: SEQ=854;PAYLOAD=wifi-test,rx,,26,-38,100,1
+2026-10-22T19:56:45.904,receptor,INFO,,,log,,,-38,100,1
+2026-10-22T19:56:45.906,receptor,INFO,,"I (62108) wifi_receptor: Enlace WiFi: RSSI=-43 dBm, calidad=100%, canal=1",wifi_quality,,,-43,100,1
+2026-10-22T19:56:45.906,receptor,INFO,855,I (62108) wifi_receptor: RX 26 bytes: SEQ=855;PAYLOAD=wifi-test,rx,,26,-43,100,1
+2026-10-22T19:56:45.907,receptor,INFO,,,log,,,-43,100,1
+2026-10-22T19:56:46.624,receptor,INFO,,"I (63128) wifi_receptor: Enlace WiFi: RSSI=-40 dBm, calidad=100%, canal=1",wifi_quality,,,-40,100,1
+2026-10-22T19:56:46.625,receptor,INFO,856,I (63128) wifi_receptor: RX 26 bytes: SEQ=856;PAYLOAD=wifi-test,rx,,26,-40,100,1
+2026-10-22T19:56:46.625,receptor,INFO,,,log,,,-40,100,1
+2026-10-22T19:56:47.750,receptor,INFO,,"I (64258) wifi_receptor: Enlace WiFi: RSSI=-43 dBm, calidad=100%, canal=1",wifi_quality,,,-43,100,1
+2026-10-22T19:56:47.751,receptor,INFO,857,I (64258) wifi_receptor: RX 26 bytes: SEQ=857;PAYLOAD=wifi-test,rx,,26,-43,100,1
+2026-10-22T19:56:47.751,receptor,INFO,,,log,,,-43,100,1
+2026-10-22T19:56:49.063,receptor,INFO,,"I (65378) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:56:49.065,receptor,INFO,858,I (65378) wifi_receptor: RX 26 bytes: SEQ=858;PAYLOAD=wifi-test,rx,,26,-45,100,1
+2026-10-22T19:56:49.067,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:56:49.900,receptor,INFO,,"I (66408) wifi_receptor: Enlace WiFi: RSSI=-47 dBm, calidad=100%, canal=1",wifi_quality,,,-47,100,1
+2026-10-22T19:56:49.902,receptor,INFO,859,I (66408) wifi_receptor: RX 26 bytes: SEQ=859;PAYLOAD=wifi-test,rx,,26,-47,100,1
+2026-10-22T19:56:49.902,receptor,INFO,,,log,,,-47,100,1
+2026-10-22T19:56:50.924,receptor,INFO,,"I (67428) wifi_receptor: Enlace WiFi: RSSI=-37 dBm, calidad=100%, canal=1",wifi_quality,,,-37,100,1
+2026-10-22T19:56:50.926,receptor,INFO,860,I (67428) wifi_receptor: RX 26 bytes: SEQ=860;PAYLOAD=wifi-test,rx,,26,-37,100,1
+2026-10-22T19:56:50.926,receptor,INFO,,,log,,,-37,100,1
+2026-10-22T19:56:51.948,receptor,INFO,,"I (68458) wifi_receptor: Enlace WiFi: RSSI=-42 dBm, calidad=100%, canal=1",wifi_quality,,,-42,100,1
+2026-10-22T19:56:53.276,receptor,INFO,861,I (68458) wifi_receptor: RX 26 bytes: SEQ=861;PAYLOAD=wifi-test,rx,,26,-42,100,1
+2026-10-22T19:56:53.277,receptor,INFO,,,log,,,-42,100,1
+2026-10-22T19:56:53.277,receptor,INFO,,"I (69478) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T19:56:53.278,receptor,INFO,862,I (69478) wifi_receptor: RX 26 bytes: SEQ=862;PAYLOAD=wifi-test,rx,,26,-46,100,1
+2026-10-22T19:56:53.278,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T19:56:53.996,receptor,INFO,,"I (70498) wifi_receptor: Enlace WiFi: RSSI=-43 dBm, calidad=100%, canal=1",wifi_quality,,,-43,100,1
+2026-10-22T19:56:53.998,receptor,INFO,863,I (70498) wifi_receptor: RX 26 bytes: SEQ=863;PAYLOAD=wifi-test,rx,,26,-43,100,1
+2026-10-22T19:56:53.998,receptor,INFO,,,log,,,-43,100,1
+2026-10-22T19:56:55.020,receptor,INFO,,"I (71528) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T19:56:55.022,receptor,INFO,864,I (71528) wifi_receptor: RX 26 bytes: SEQ=864;PAYLOAD=wifi-test,rx,,26,-44,100,1
+2026-10-22T19:56:56.345,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T19:56:56.346,receptor,INFO,,"I (72558) wifi_receptor: Enlace WiFi: RSSI=-43 dBm, calidad=100%, canal=1",wifi_quality,,,-43,100,1
+2026-10-22T19:56:56.346,receptor,INFO,865,I (72558) wifi_receptor: RX 26 bytes: SEQ=865;PAYLOAD=wifi-test,rx,,26,-43,100,1
+2026-10-22T19:56:56.346,receptor,INFO,,,log,,,-43,100,1
+2026-10-22T19:56:57.171,receptor,INFO,,"I (73678) wifi_receptor: Enlace WiFi: RSSI=-43 dBm, calidad=100%, canal=1",wifi_quality,,,-43,100,1
+2026-10-22T19:56:57.172,receptor,INFO,866,I (73678) wifi_receptor: RX 26 bytes: SEQ=866;PAYLOAD=wifi-test,rx,,26,-43,100,1
+2026-10-22T19:56:57.172,receptor,INFO,,,log,,,-43,100,1
+2026-10-22T19:56:58.297,receptor,INFO,,"I (74798) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T19:56:58.298,receptor,INFO,867,I (74808) wifi_receptor: RX 26 bytes: SEQ=867;PAYLOAD=wifi-test,rx,,26,-46,100,1
+2026-10-22T19:56:58.299,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T19:56:59.588,receptor,INFO,,"I (75828) wifi_receptor: Enlace WiFi: RSSI=-43 dBm, calidad=100%, canal=1",wifi_quality,,,-43,100,1
+2026-10-22T19:56:59.589,receptor,INFO,868,I (75828) wifi_receptor: RX 26 bytes: SEQ=868;PAYLOAD=wifi-test,rx,,26,-43,100,1
+2026-10-22T19:56:59.589,receptor,INFO,,,log,,,-43,100,1
+2026-10-22T19:57:00.451,receptor,INFO,,"I (76958) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:57:00.452,receptor,INFO,869,I (76958) wifi_receptor: RX 26 bytes: SEQ=869;PAYLOAD=wifi-test,rx,,26,-45,100,1
+2026-10-22T19:57:00.452,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:57:01.472,receptor,INFO,,"I (77978) wifi_receptor: Enlace WiFi: RSSI=-41 dBm, calidad=100%, canal=1",wifi_quality,,,-41,100,1
+2026-10-22T19:57:01.474,receptor,INFO,870,I (77978) wifi_receptor: RX 26 bytes: SEQ=870;PAYLOAD=wifi-test,rx,,26,-41,100,1
+2026-10-22T19:57:01.474,receptor,INFO,,,log,,,-41,100,1
+2026-10-22T19:57:02.495,receptor,INFO,,"I (78998) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T19:57:03.813,receptor,INFO,871,I (78998) wifi_receptor: RX 26 bytes: SEQ=871;PAYLOAD=wifi-test,rx,,26,-44,100,1
+2026-10-22T19:57:03.813,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T19:57:03.813,receptor,INFO,,"I (80028) wifi_receptor: Enlace WiFi: RSSI=-43 dBm, calidad=100%, canal=1",wifi_quality,,,-43,100,1
+2026-10-22T19:57:03.814,receptor,INFO,872,I (80028) wifi_receptor: RX 26 bytes: SEQ=872;PAYLOAD=wifi-test,rx,,26,-43,100,1
+2026-10-22T19:57:03.814,receptor,INFO,,,log,,,-43,100,1
+2026-10-22T19:57:04.544,receptor,INFO,,"I (81048) wifi_receptor: Enlace WiFi: RSSI=-43 dBm, calidad=100%, canal=1",wifi_quality,,,-43,100,1
+2026-10-22T19:57:04.545,receptor,INFO,873,I (81048) wifi_receptor: RX 26 bytes: SEQ=873;PAYLOAD=wifi-test,rx,,26,-43,100,1
+2026-10-22T19:57:04.545,receptor,INFO,,,log,,,-43,100,1
+2026-10-22T19:57:05.567,receptor,INFO,,"I (82078) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:57:05.569,receptor,INFO,874,I (82078) wifi_receptor: RX 26 bytes: SEQ=874;PAYLOAD=wifi-test,rx,,26,-45,100,1
+2026-10-22T19:57:06.844,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:57:06.845,receptor,INFO,,"I (83098) wifi_receptor: Enlace WiFi: RSSI=-42 dBm, calidad=100%, canal=1",wifi_quality,,,-42,100,1
+2026-10-22T19:57:06.845,receptor,INFO,875,I (83098) wifi_receptor: RX 26 bytes: SEQ=875;PAYLOAD=wifi-test,rx,,26,-42,100,1
+2026-10-22T19:57:06.846,receptor,INFO,,,log,,,-42,100,1
+2026-10-22T19:57:07.616,receptor,INFO,,"I (84118) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:57:07.618,receptor,INFO,876,I (84118) wifi_receptor: RX 26 bytes: SEQ=876;PAYLOAD=wifi-test,rx,,26,-45,100,1
+2026-10-22T19:57:07.618,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:57:08.639,receptor,INFO,,"I (85148) wifi_receptor: Enlace WiFi: RSSI=-42 dBm, calidad=100%, canal=1",wifi_quality,,,-42,100,1
+2026-10-22T19:57:08.641,receptor,INFO,877,I (85148) wifi_receptor: RX 26 bytes: SEQ=877;PAYLOAD=wifi-test,rx,,26,-42,100,1
+2026-10-22T19:57:08.641,receptor,INFO,,,log,,,-42,100,1
+2026-10-22T19:57:09.898,receptor,INFO,,"I (86168) wifi_receptor: Enlace WiFi: RSSI=-47 dBm, calidad=100%, canal=1",wifi_quality,,,-47,100,1
+2026-10-22T19:57:09.899,receptor,INFO,878,I (86168) wifi_receptor: RX 26 bytes: SEQ=878;PAYLOAD=wifi-test,rx,,26,-47,100,1
+2026-10-22T19:57:09.900,receptor,INFO,,,log,,,-47,100,1
+2026-10-22T19:57:10.688,receptor,INFO,,"I (87198) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:57:10.689,receptor,INFO,879,I (87198) wifi_receptor: RX 26 bytes: SEQ=879;PAYLOAD=wifi-test,rx,,26,-45,100,1
+2026-10-22T19:57:10.691,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:57:11.712,receptor,INFO,,"I (88218) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T19:57:11.713,receptor,INFO,880,I (88218) wifi_receptor: RX 26 bytes: SEQ=880;PAYLOAD=wifi-test,rx,,26,-44,100,1
+2026-10-22T19:57:11.713,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T19:57:12.738,receptor,INFO,,"I (89248) wifi_receptor: Enlace WiFi: RSSI=-40 dBm, calidad=100%, canal=1",wifi_quality,,,-40,100,1
+2026-10-22T19:57:14.126,receptor,INFO,881,I (89248) wifi_receptor: RX 26 bytes: SEQ=881;PAYLOAD=wifi-test,rx,,26,-40,100,1
+2026-10-22T19:57:14.126,receptor,INFO,,,log,,,-40,100,1
+2026-10-22T19:57:14.127,receptor,INFO,,"I (90268) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T19:57:14.128,receptor,INFO,882,I (90268) wifi_receptor: RX 26 bytes: SEQ=882;PAYLOAD=wifi-test,rx,,26,-46,100,1
+2026-10-22T19:57:14.128,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T19:57:14.788,receptor,INFO,,"I (91298) wifi_receptor: Enlace WiFi: RSSI=-40 dBm, calidad=100%, canal=1",wifi_quality,,,-40,100,1
+2026-10-22T19:57:14.789,receptor,INFO,883,I (91298) wifi_receptor: RX 26 bytes: SEQ=883;PAYLOAD=wifi-test,rx,,26,-40,100,1
+2026-10-22T19:57:14.789,receptor,INFO,,,log,,,-40,100,1
+2026-10-22T19:57:15.808,receptor,INFO,,"I (92318) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:57:15.809,receptor,INFO,884,I (92318) wifi_receptor: RX 26 bytes: SEQ=884;PAYLOAD=wifi-test,rx,,26,-45,100,1
+2026-10-22T19:57:17.133,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:57:17.134,receptor,INFO,,"I (93338) wifi_receptor: Enlace WiFi: RSSI=-43 dBm, calidad=100%, canal=1",wifi_quality,,,-43,100,1
+2026-10-22T19:57:17.135,receptor,INFO,885,I (93338) wifi_receptor: RX 26 bytes: SEQ=885;PAYLOAD=wifi-test,rx,,26,-43,100,1
+2026-10-22T19:57:17.135,receptor,INFO,,,log,,,-43,100,1
+2026-10-22T19:57:17.958,receptor,INFO,,"I (94468) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:57:17.961,receptor,INFO,886,I (94468) wifi_receptor: RX 26 bytes: SEQ=886;PAYLOAD=wifi-test,rx,,26,-45,100,1
+2026-10-22T19:57:17.962,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:57:19.084,receptor,INFO,,"I (95588) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T19:57:19.086,receptor,INFO,887,I (95588) wifi_receptor: RX 26 bytes: SEQ=887;PAYLOAD=wifi-test,rx,,26,-44,100,1
+2026-10-22T19:57:19.086,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T19:57:20.787,receptor,INFO,,"I (96618) wifi_receptor: Enlace WiFi: RSSI=-49 dBm, calidad=100%, canal=1",wifi_quality,,,-49,100,1
+2026-10-22T19:57:20.789,receptor,INFO,888,I (96618) wifi_receptor: RX 26 bytes: SEQ=888;PAYLOAD=wifi-test,rx,,26,-49,100,1
+2026-10-22T19:57:20.789,receptor,INFO,,,log,,,-49,100,1
+2026-10-22T19:57:21.132,receptor,INFO,,"I (97638) wifi_receptor: Enlace WiFi: RSSI=-47 dBm, calidad=100%, canal=1",wifi_quality,,,-47,100,1
+2026-10-22T19:57:21.134,receptor,INFO,889,I (97638) wifi_receptor: RX 26 bytes: SEQ=889;PAYLOAD=wifi-test,rx,,26,-47,100,1
+2026-10-22T19:57:21.134,receptor,INFO,,,log,,,-47,100,1
+2026-10-22T19:57:22.156,receptor,INFO,,"I (98658) wifi_receptor: Enlace WiFi: RSSI=-47 dBm, calidad=100%, canal=1",wifi_quality,,,-47,100,1
+2026-10-22T19:57:22.158,receptor,INFO,890,I (98668) wifi_receptor: RX 26 bytes: SEQ=890;PAYLOAD=wifi-test,rx,,26,-47,100,1
+2026-10-22T19:57:22.158,receptor,INFO,,,log,,,-47,100,1
+2026-10-22T19:57:23.180,receptor,INFO,,"I (99688) wifi_receptor: Enlace WiFi: RSSI=-48 dBm, calidad=100%, canal=1",wifi_quality,,,-48,100,1
+2026-10-22T19:57:24.943,receptor,INFO,891,I (99688) wifi_receptor: RX 26 bytes: SEQ=891;PAYLOAD=wifi-test,rx,,26,-48,100,1
+2026-10-22T19:57:24.944,receptor,INFO,,,log,,,-48,100,1
+2026-10-22T19:57:24.945,receptor,INFO,,"I (100708) wifi_receptor: Enlace WiFi: RSSI=-47 dBm, calidad=100%, canal=1",wifi_quality,,,-47,100,1
+2026-10-22T19:57:24.947,receptor,INFO,892,I (100708) wifi_receptor: RX 26 bytes: SEQ=892;PAYLOAD=wifi-test,rx,,26,-47,100,1
+2026-10-22T19:57:24.947,receptor,INFO,,,log,,,-47,100,1
+2026-10-22T19:57:25.228,receptor,INFO,,"I (101738) wifi_receptor: Enlace WiFi: RSSI=-49 dBm, calidad=100%, canal=1",wifi_quality,,,-49,100,1
+2026-10-22T19:57:25.230,receptor,INFO,893,I (101738) wifi_receptor: RX 26 bytes: SEQ=893;PAYLOAD=wifi-test,rx,,26,-49,100,1
+2026-10-22T19:57:25.230,receptor,INFO,,,log,,,-49,100,1
+2026-10-22T19:57:26.253,receptor,INFO,,"I (102758) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T19:57:26.255,receptor,INFO,894,I (102758) wifi_receptor: RX 26 bytes: SEQ=894;PAYLOAD=wifi-test,rx,,26,-46,100,1
+2026-10-22T19:57:28.931,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T19:57:28.950,receptor,INFO,,"I (103778) wifi_receptor: Enlace WiFi: RSSI=-47 dBm, calidad=100%, canal=1",wifi_quality,,,-47,100,1
+2026-10-22T19:57:28.966,receptor,INFO,895,I (103788) wifi_receptor: RX 26 bytes: SEQ=895;PAYLOAD=wifi-test,rx,,26,-47,100,1
+2026-10-22T19:57:28.989,receptor,INFO,,,log,,,-47,100,1
+2026-10-22T19:57:29.001,receptor,INFO,,"I (104808) wifi_receptor: Enlace WiFi: RSSI=-47 dBm, calidad=100%, canal=1",wifi_quality,,,-47,100,1
+2026-10-22T19:57:29.023,receptor,INFO,896,I (104808) wifi_receptor: RX 26 bytes: SEQ=896;PAYLOAD=wifi-test,rx,,26,-47,100,1
+2026-10-22T19:57:29.030,receptor,INFO,,,log,,,-47,100,1
+2026-10-22T19:57:29.325,receptor,INFO,,"I (105828) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:57:29.336,receptor,INFO,897,I (105828) wifi_receptor: RX 26 bytes: SEQ=897;PAYLOAD=wifi-test,rx,,26,-45,100,1
+2026-10-22T19:57:29.343,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:57:31.821,receptor,INFO,,"I (106858) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:57:31.824,receptor,INFO,898,I (106858) wifi_receptor: RX 26 bytes: SEQ=898;PAYLOAD=wifi-test,rx,,26,-45,100,1
+2026-10-22T19:57:31.829,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:57:31.836,receptor,INFO,,"I (107878) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T19:57:31.839,receptor,INFO,899,I (107878) wifi_receptor: RX 26 bytes: SEQ=899;PAYLOAD=wifi-test,rx,,26,-46,100,1
+2026-10-22T19:57:31.840,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T19:57:32.398,receptor,INFO,,"I (108908) wifi_receptor: Enlace WiFi: RSSI=-36 dBm, calidad=100%, canal=1",wifi_quality,,,-36,100,1
+2026-10-22T19:57:32.400,receptor,INFO,900,I (108908) wifi_receptor: RX 26 bytes: SEQ=900;PAYLOAD=wifi-test,rx,,26,-36,100,1
+2026-10-22T19:57:32.401,receptor,INFO,,,log,,,-36,100,1
+2026-10-22T19:57:33.420,receptor,INFO,,"I (109928) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:57:35.287,receptor,INFO,901,I (109928) wifi_receptor: RX 26 bytes: SEQ=901;PAYLOAD=wifi-test,rx,,26,-45,100,1
+2026-10-22T19:57:35.288,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:57:35.291,receptor,INFO,,"I (110958) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T19:57:35.293,receptor,INFO,902,I (110958) wifi_receptor: RX 26 bytes: SEQ=902;PAYLOAD=wifi-test,rx,,26,-44,100,1
+2026-10-22T19:57:35.294,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T19:57:35.468,receptor,INFO,,"I (111978) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T19:57:35.470,receptor,INFO,903,I (111978) wifi_receptor: RX 26 bytes: SEQ=903;PAYLOAD=wifi-test,rx,,26,-46,100,1
+2026-10-22T19:57:35.470,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T19:57:36.492,receptor,INFO,,"I (112998) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T19:57:36.494,receptor,INFO,904,I (112998) wifi_receptor: RX 26 bytes: SEQ=904;PAYLOAD=wifi-test,rx,,26,-46,100,1
+2026-10-22T19:57:38.306,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T19:57:38.309,receptor,INFO,,"I (114018) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:57:38.313,receptor,INFO,905,I (114028) wifi_receptor: RX 26 bytes: SEQ=905;PAYLOAD=wifi-test,rx,,26,-45,100,1
+2026-10-22T19:57:38.313,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:57:38.545,receptor,INFO,,"I (115048) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T19:57:38.546,receptor,INFO,906,I (115048) wifi_receptor: RX 26 bytes: SEQ=906;PAYLOAD=wifi-test,rx,,26,-46,100,1
+2026-10-22T19:57:38.546,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T19:57:39.564,receptor,INFO,,"I (116068) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T19:57:39.566,receptor,INFO,907,I (116068) wifi_receptor: RX 26 bytes: SEQ=907;PAYLOAD=wifi-test,rx,,26,-44,100,1
+2026-10-22T19:57:39.566,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T19:57:41.147,receptor,INFO,,"I (117098) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T19:57:41.148,receptor,INFO,908,I (117098) wifi_receptor: RX 26 bytes: SEQ=908;PAYLOAD=wifi-test,rx,,26,-44,100,1
+2026-10-22T19:57:41.148,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T19:57:41.613,receptor,INFO,,"I (118118) wifi_receptor: Enlace WiFi: RSSI=-40 dBm, calidad=100%, canal=1",wifi_quality,,,-40,100,1
+2026-10-22T19:57:41.619,receptor,INFO,909,I (118118) wifi_receptor: RX 26 bytes: SEQ=909;PAYLOAD=wifi-test,rx,,26,-40,100,1
+2026-10-22T19:57:41.621,receptor,INFO,,,log,,,-40,100,1
+2026-10-22T19:57:42.769,receptor,INFO,,"I (119278) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:57:42.771,receptor,INFO,910,I (119278) wifi_receptor: RX 26 bytes: SEQ=910;PAYLOAD=wifi-test,rx,,26,-45,100,1
+2026-10-22T19:57:42.771,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:57:43.869,receptor,INFO,,"I (120378) wifi_receptor: Enlace WiFi: RSSI=-41 dBm, calidad=100%, canal=1",wifi_quality,,,-41,100,1
+2026-10-22T19:57:45.523,receptor,INFO,911,I (120378) wifi_receptor: RX 26 bytes: SEQ=911;PAYLOAD=wifi-test,rx,,26,-41,100,1
+2026-10-22T19:57:45.523,receptor,INFO,,,log,,,-41,100,1
+2026-10-22T19:57:45.525,receptor,INFO,,"I (121398) wifi_receptor: Enlace WiFi: RSSI=-47 dBm, calidad=100%, canal=1",wifi_quality,,,-47,100,1
+2026-10-22T19:57:45.526,receptor,INFO,912,I (121398) wifi_receptor: RX 26 bytes: SEQ=912;PAYLOAD=wifi-test,rx,,26,-47,100,1
+2026-10-22T19:57:45.526,receptor,INFO,,,log,,,-47,100,1
+2026-10-22T19:57:46.016,receptor,INFO,,"I (122518) wifi_receptor: Enlace WiFi: RSSI=-48 dBm, calidad=100%, canal=1",wifi_quality,,,-48,100,1
+2026-10-22T19:57:46.018,receptor,INFO,913,I (122528) wifi_receptor: RX 26 bytes: SEQ=913;PAYLOAD=wifi-test,rx,,26,-48,100,1
+2026-10-22T19:57:46.018,receptor,INFO,,,log,,,-48,100,1
+2026-10-22T19:57:47.148,receptor,INFO,,"I (123658) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T19:57:47.150,receptor,INFO,914,I (123658) wifi_receptor: RX 26 bytes: SEQ=914;PAYLOAD=wifi-test,rx,,26,-46,100,1
+2026-10-22T19:57:48.714,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T19:57:48.716,receptor,INFO,,"I (124668) wifi_receptor: Enlace WiFi: RSSI=-47 dBm, calidad=100%, canal=1",wifi_quality,,,-47,100,1
+2026-10-22T19:57:48.718,receptor,INFO,915,I (124678) wifi_receptor: RX 26 bytes: SEQ=915;PAYLOAD=wifi-test,rx,,26,-47,100,1
+2026-10-22T19:57:48.718,receptor,INFO,,,log,,,-47,100,1
+2026-10-22T19:57:49.190,receptor,INFO,,"I (125698) wifi_receptor: Enlace WiFi: RSSI=-42 dBm, calidad=100%, canal=1",wifi_quality,,,-42,100,1
+2026-10-22T19:57:49.193,receptor,INFO,916,I (125698) wifi_receptor: RX 26 bytes: SEQ=916;PAYLOAD=wifi-test,rx,,26,-42,100,1
+2026-10-22T19:57:49.194,receptor,INFO,,,log,,,-42,100,1
+2026-10-22T19:57:50.323,receptor,INFO,,"I (126828) wifi_receptor: Enlace WiFi: RSSI=-47 dBm, calidad=100%, canal=1",wifi_quality,,,-47,100,1
+2026-10-22T19:57:50.325,receptor,INFO,917,I (126828) wifi_receptor: RX 26 bytes: SEQ=917;PAYLOAD=wifi-test,rx,,26,-47,100,1
+2026-10-22T19:57:50.325,receptor,INFO,,,log,,,-47,100,1
+2026-10-22T19:57:51.955,receptor,INFO,,"I (127948) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T19:57:51.955,receptor,INFO,918,I (127948) wifi_receptor: RX 26 bytes: SEQ=918;PAYLOAD=wifi-test,rx,,26,-44,100,1
+2026-10-22T19:57:51.956,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T19:57:52.467,receptor,INFO,,"I (128978) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:57:52.475,receptor,INFO,919,I (128978) wifi_receptor: RX 26 bytes: SEQ=919;PAYLOAD=wifi-test,rx,,26,-45,100,1
+2026-10-22T19:57:52.481,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:57:53.593,receptor,INFO,,"I (130098) wifi_receptor: Enlace WiFi: RSSI=-48 dBm, calidad=100%, canal=1",wifi_quality,,,-48,100,1
+2026-10-22T19:57:53.596,receptor,INFO,920,I (130098) wifi_receptor: RX 26 bytes: SEQ=920;PAYLOAD=wifi-test,rx,,26,-48,100,1
+2026-10-22T19:57:53.599,receptor,INFO,,,log,,,-48,100,1
+2026-10-22T19:57:54.719,receptor,INFO,,"I (131228) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T19:57:56.062,receptor,INFO,921,I (131228) wifi_receptor: RX 26 bytes: SEQ=921;PAYLOAD=wifi-test,rx,,26,-44,100,1
+2026-10-22T19:57:56.063,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T19:57:56.064,receptor,INFO,,"I (132248) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T19:57:56.065,receptor,INFO,922,I (132248) wifi_receptor: RX 26 bytes: SEQ=922;PAYLOAD=wifi-test,rx,,26,-44,100,1
+2026-10-22T19:57:56.065,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T19:57:56.771,receptor,INFO,,"I (133278) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:57:56.773,receptor,INFO,923,I (133278) wifi_receptor: RX 26 bytes: SEQ=923;PAYLOAD=wifi-test,rx,,26,-45,100,1
+2026-10-22T19:57:56.774,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:57:57.791,receptor,INFO,,"I (134298) wifi_receptor: Enlace WiFi: RSSI=-47 dBm, calidad=100%, canal=1",wifi_quality,,,-47,100,1
+2026-10-22T19:57:57.793,receptor,INFO,924,I (134298) wifi_receptor: RX 26 bytes: SEQ=924;PAYLOAD=wifi-test,rx,,26,-47,100,1
+2026-10-22T19:57:59.151,receptor,INFO,,,log,,,-47,100,1
+2026-10-22T19:57:59.153,receptor,INFO,,"I (135318) wifi_receptor: Enlace WiFi: RSSI=-47 dBm, calidad=100%, canal=1",wifi_quality,,,-47,100,1
+2026-10-22T19:57:59.154,receptor,INFO,925,I (135328) wifi_receptor: RX 26 bytes: SEQ=925;PAYLOAD=wifi-test,rx,,26,-47,100,1
+2026-10-22T19:57:59.156,receptor,INFO,,,log,,,-47,100,1
+2026-10-22T19:57:59.839,receptor,INFO,,"I (136348) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T19:57:59.841,receptor,INFO,926,I (136348) wifi_receptor: RX 26 bytes: SEQ=926;PAYLOAD=wifi-test,rx,,26,-46,100,1
+2026-10-22T19:57:59.841,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T19:58:00.863,receptor,INFO,,"I (137368) wifi_receptor: Enlace WiFi: RSSI=-48 dBm, calidad=100%, canal=1",wifi_quality,,,-48,100,1
+2026-10-22T19:58:00.865,receptor,INFO,927,I (137368) wifi_receptor: RX 26 bytes: SEQ=927;PAYLOAD=wifi-test,rx,,26,-48,100,1
+2026-10-22T19:58:00.867,receptor,INFO,,,log,,,-48,100,1
+2026-10-22T19:58:02.219,receptor,INFO,,"I (138398) wifi_receptor: Enlace WiFi: RSSI=-47 dBm, calidad=100%, canal=1",wifi_quality,,,-47,100,1
+2026-10-22T19:58:02.220,receptor,INFO,928,I (138398) wifi_receptor: RX 26 bytes: SEQ=928;PAYLOAD=wifi-test,rx,,26,-47,100,1
+2026-10-22T19:58:02.220,receptor,INFO,,,log,,,-47,100,1
+2026-10-22T19:58:02.912,receptor,INFO,,"I (139418) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:58:02.913,receptor,INFO,929,I (139418) wifi_receptor: RX 26 bytes: SEQ=929;PAYLOAD=wifi-test,rx,,26,-45,100,1
+2026-10-22T19:58:02.914,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:58:03.935,receptor,INFO,,"I (140438) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T19:58:03.937,receptor,INFO,930,I (140448) wifi_receptor: RX 26 bytes: SEQ=930;PAYLOAD=wifi-test,rx,,26,-46,100,1
+2026-10-22T19:58:03.937,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T19:58:04.961,receptor,INFO,,"I (141468) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:58:06.286,receptor,INFO,931,I (141468) wifi_receptor: RX 26 bytes: SEQ=931;PAYLOAD=wifi-test,rx,,26,-45,100,1
+2026-10-22T19:58:06.290,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:58:06.291,receptor,INFO,,"I (142598) wifi_receptor: Enlace WiFi: RSSI=-48 dBm, calidad=100%, canal=1",wifi_quality,,,-48,100,1
+2026-10-22T19:58:06.291,receptor,INFO,932,I (142598) wifi_receptor: RX 26 bytes: SEQ=932;PAYLOAD=wifi-test,rx,,26,-48,100,1
+2026-10-22T19:58:06.292,receptor,INFO,,,log,,,-48,100,1
+2026-10-22T19:58:07.220,receptor,INFO,,"I (143728) wifi_receptor: Enlace WiFi: RSSI=-47 dBm, calidad=100%, canal=1",wifi_quality,,,-47,100,1
+2026-10-22T19:58:07.224,receptor,INFO,933,I (143728) wifi_receptor: RX 26 bytes: SEQ=933;PAYLOAD=wifi-test,rx,,26,-47,100,1
+2026-10-22T19:58:07.226,receptor,INFO,,,log,,,-47,100,1
+2026-10-22T19:58:08.339,receptor,INFO,,"I (144848) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T19:58:08.340,receptor,INFO,934,I (144848) wifi_receptor: RX 26 bytes: SEQ=934;PAYLOAD=wifi-test,rx,,26,-44,100,1
+2026-10-22T19:58:09.639,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T19:58:09.641,receptor,INFO,,"I (145968) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T19:58:09.641,receptor,INFO,935,I (145978) wifi_receptor: RX 26 bytes: SEQ=935;PAYLOAD=wifi-test,rx,,26,-44,100,1
+2026-10-22T19:58:09.642,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T19:58:10.489,receptor,INFO,,"I (146998) wifi_receptor: Enlace WiFi: RSSI=-42 dBm, calidad=100%, canal=1",wifi_quality,,,-42,100,1
+2026-10-22T19:58:10.490,receptor,INFO,936,I (146998) wifi_receptor: RX 26 bytes: SEQ=936;PAYLOAD=wifi-test,rx,,26,-42,100,1
+2026-10-22T19:58:10.490,receptor,INFO,,,log,,,-42,100,1
+2026-10-22T19:58:11.514,receptor,INFO,,"I (148018) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T19:58:11.515,receptor,INFO,937,I (148018) wifi_receptor: RX 26 bytes: SEQ=937;PAYLOAD=wifi-test,rx,,26,-44,100,1
+2026-10-22T19:58:11.515,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T19:58:13.094,receptor,INFO,,"I (149048) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T19:58:13.096,receptor,INFO,938,I (149048) wifi_receptor: RX 26 bytes: SEQ=938;PAYLOAD=wifi-test,rx,,26,-44,100,1
+2026-10-22T19:58:13.096,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T19:58:13.561,receptor,INFO,,"I (150068) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T19:58:13.563,receptor,INFO,939,I (150068) wifi_receptor: RX 26 bytes: SEQ=939;PAYLOAD=wifi-test,rx,,26,-46,100,1
+2026-10-22T19:58:13.563,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T19:58:14.585,receptor,INFO,,"I (151088) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:58:14.587,receptor,INFO,940,I (151098) wifi_receptor: RX 26 bytes: SEQ=940;PAYLOAD=wifi-test,rx,,26,-45,100,1
+2026-10-22T19:58:14.587,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:58:15.609,receptor,INFO,,"I (152118) wifi_receptor: Enlace WiFi: RSSI=-48 dBm, calidad=100%, canal=1",wifi_quality,,,-48,100,1
+2026-10-22T19:58:17.652,receptor,INFO,941,I (152118) wifi_receptor: RX 26 bytes: SEQ=941;PAYLOAD=wifi-test,rx,,26,-48,100,1
+2026-10-22T19:58:17.652,receptor,INFO,,,log,,,-48,100,1
+2026-10-22T19:58:17.654,receptor,INFO,,"I (153238) wifi_receptor: Enlace WiFi: RSSI=-47 dBm, calidad=100%, canal=1",wifi_quality,,,-47,100,1
+2026-10-22T19:58:17.655,receptor,INFO,942,I (153248) wifi_receptor: RX 26 bytes: SEQ=942;PAYLOAD=wifi-test,rx,,26,-47,100,1
+2026-10-22T19:58:17.656,receptor,INFO,,,log,,,-47,100,1
+2026-10-22T19:58:17.964,receptor,INFO,,"I (154468) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T19:58:17.966,receptor,INFO,943,I (154468) wifi_receptor: RX 26 bytes: SEQ=943;PAYLOAD=wifi-test,rx,,26,-46,100,1
+2026-10-22T19:58:17.966,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T19:58:19.103,receptor,INFO,,"I (155608) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T19:58:19.104,receptor,INFO,944,I (155608) wifi_receptor: RX 26 bytes: SEQ=944;PAYLOAD=wifi-test,rx,,26,-44,100,1
+2026-10-22T19:58:20.726,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T19:58:20.727,receptor,INFO,,"I (156728) wifi_receptor: Enlace WiFi: RSSI=-48 dBm, calidad=100%, canal=1",wifi_quality,,,-48,100,1
+2026-10-22T19:58:20.729,receptor,INFO,945,I (156728) wifi_receptor: RX 26 bytes: SEQ=945;PAYLOAD=wifi-test,rx,,26,-48,100,1
+2026-10-22T19:58:20.729,receptor,INFO,,,log,,,-48,100,1
+2026-10-22T19:58:21.343,receptor,INFO,,"I (157848) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T19:58:21.345,receptor,INFO,946,I (157848) wifi_receptor: RX 26 bytes: SEQ=946;PAYLOAD=wifi-test,rx,,26,-46,100,1
+2026-10-22T19:58:21.345,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T19:58:22.368,receptor,INFO,,"I (158878) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T19:58:22.369,receptor,INFO,947,I (158878) wifi_receptor: RX 26 bytes: SEQ=947;PAYLOAD=wifi-test,rx,,26,-46,100,1
+2026-10-22T19:58:22.369,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T19:58:24.299,receptor,INFO,,"I (159908) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T19:58:24.300,receptor,INFO,948,I (159908) wifi_receptor: RX 26 bytes: SEQ=948;PAYLOAD=wifi-test,rx,,26,-46,100,1
+2026-10-22T19:58:24.300,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T19:58:24.518,receptor,INFO,,"I (161028) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:58:24.519,receptor,INFO,949,I (161028) wifi_receptor: RX 26 bytes: SEQ=949;PAYLOAD=wifi-test,rx,,26,-45,100,1
+2026-10-22T19:58:24.519,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:58:25.644,receptor,INFO,,"I (162148) wifi_receptor: Enlace WiFi: RSSI=-47 dBm, calidad=100%, canal=1",wifi_quality,,,-47,100,1
+2026-10-22T19:58:25.645,receptor,INFO,950,I (162148) wifi_receptor: RX 26 bytes: SEQ=950;PAYLOAD=wifi-test,rx,,26,-47,100,1
+2026-10-22T19:58:25.646,receptor,INFO,,,log,,,-47,100,1
+2026-10-22T19:58:26.668,receptor,INFO,,"I (163178) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T19:58:28.622,receptor,INFO,951,I (163178) wifi_receptor: RX 26 bytes: SEQ=951;PAYLOAD=wifi-test,rx,,26,-44,100,1
+2026-10-22T19:58:28.623,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T19:58:28.625,receptor,INFO,,"I (164198) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:58:28.626,receptor,INFO,952,I (164198) wifi_receptor: RX 26 bytes: SEQ=952;PAYLOAD=wifi-test,rx,,26,-45,100,1
+2026-10-22T19:58:28.627,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:58:28.716,receptor,INFO,,"I (165228) wifi_receptor: Enlace WiFi: RSSI=-47 dBm, calidad=100%, canal=1",wifi_quality,,,-47,100,1
+2026-10-22T19:58:28.717,receptor,INFO,953,I (165228) wifi_receptor: RX 26 bytes: SEQ=953;PAYLOAD=wifi-test,rx,,26,-47,100,1
+2026-10-22T19:58:28.717,receptor,INFO,,,log,,,-47,100,1
+2026-10-22T19:58:29.740,receptor,INFO,,"I (166248) wifi_receptor: Enlace WiFi: RSSI=-41 dBm, calidad=100%, canal=1",wifi_quality,,,-41,100,1
+2026-10-22T19:58:29.742,receptor,INFO,954,I (166248) wifi_receptor: RX 26 bytes: SEQ=954;PAYLOAD=wifi-test,rx,,26,-41,100,1
+2026-10-22T19:58:31.332,receptor,INFO,,,log,,,-41,100,1
+2026-10-22T19:58:31.334,receptor,INFO,,"I (167268) wifi_receptor: Enlace WiFi: RSSI=-47 dBm, calidad=100%, canal=1",wifi_quality,,,-47,100,1
+2026-10-22T19:58:31.337,receptor,INFO,955,I (167268) wifi_receptor: RX 26 bytes: SEQ=955;PAYLOAD=wifi-test,rx,,26,-47,100,1
+2026-10-22T19:58:31.337,receptor,INFO,,,log,,,-47,100,1
+2026-10-22T19:58:31.788,receptor,INFO,,"I (168298) wifi_receptor: Enlace WiFi: RSSI=-48 dBm, calidad=100%, canal=1",wifi_quality,,,-48,100,1
+2026-10-22T19:58:31.789,receptor,INFO,956,I (168298) wifi_receptor: RX 26 bytes: SEQ=956;PAYLOAD=wifi-test,rx,,26,-48,100,1
+2026-10-22T19:58:31.789,receptor,INFO,,,log,,,-48,100,1
+2026-10-22T19:58:32.812,receptor,INFO,,"I (169318) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T19:58:32.814,receptor,INFO,957,I (169318) wifi_receptor: RX 26 bytes: SEQ=957;PAYLOAD=wifi-test,rx,,26,-44,100,1
+2026-10-22T19:58:32.814,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T19:58:34.336,receptor,INFO,,"I (170348) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T19:58:34.337,receptor,INFO,958,I (170348) wifi_receptor: RX 26 bytes: SEQ=958;PAYLOAD=wifi-test,rx,,26,-44,100,1
+2026-10-22T19:58:34.338,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T19:58:34.862,receptor,INFO,,"I (171368) wifi_receptor: Enlace WiFi: RSSI=-41 dBm, calidad=100%, canal=1",wifi_quality,,,-41,100,1
+2026-10-22T19:58:34.864,receptor,INFO,959,I (171368) wifi_receptor: RX 26 bytes: SEQ=959;PAYLOAD=wifi-test,rx,,26,-41,100,1
+2026-10-22T19:58:34.866,receptor,INFO,,,log,,,-41,100,1
+2026-10-22T19:58:35.988,receptor,INFO,,"I (172498) wifi_receptor: Enlace WiFi: RSSI=-43 dBm, calidad=100%, canal=1",wifi_quality,,,-43,100,1
+2026-10-22T19:58:35.989,receptor,INFO,960,I (172498) wifi_receptor: RX 26 bytes: SEQ=960;PAYLOAD=wifi-test,rx,,26,-43,100,1
+2026-10-22T19:58:35.989,receptor,INFO,,,log,,,-43,100,1
+2026-10-22T19:58:37.113,receptor,INFO,,"I (173618) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T19:58:38.675,receptor,INFO,961,I (173618) wifi_receptor: RX 26 bytes: SEQ=961;PAYLOAD=wifi-test,rx,,26,-44,100,1
+2026-10-22T19:58:38.675,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T19:58:38.677,receptor,INFO,,"I (174648) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T19:58:38.678,receptor,INFO,962,I (174648) wifi_receptor: RX 26 bytes: SEQ=962;PAYLOAD=wifi-test,rx,,26,-46,100,1
+2026-10-22T19:58:38.678,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T19:58:39.161,receptor,INFO,,"I (175668) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:58:39.163,receptor,INFO,963,I (175668) wifi_receptor: RX 26 bytes: SEQ=963;PAYLOAD=wifi-test,rx,,26,-45,100,1
+2026-10-22T19:58:39.163,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:58:40.185,receptor,INFO,,"I (176688) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:58:40.186,receptor,INFO,964,I (176698) wifi_receptor: RX 26 bytes: SEQ=964;PAYLOAD=wifi-test,rx,,26,-45,100,1
+2026-10-22T19:58:41.752,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:58:41.753,receptor,INFO,,"I (177718) wifi_receptor: Enlace WiFi: RSSI=-43 dBm, calidad=100%, canal=1",wifi_quality,,,-43,100,1
+2026-10-22T19:58:41.754,receptor,INFO,965,I (177718) wifi_receptor: RX 26 bytes: SEQ=965;PAYLOAD=wifi-test,rx,,26,-43,100,1
+2026-10-22T19:58:41.755,receptor,INFO,,,log,,,-43,100,1
+2026-10-22T19:58:42.233,receptor,INFO,,"I (178738) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T19:58:42.234,receptor,INFO,966,I (178738) wifi_receptor: RX 26 bytes: SEQ=966;PAYLOAD=wifi-test,rx,,26,-44,100,1
+2026-10-22T19:58:42.234,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T19:58:43.257,receptor,INFO,,"I (179768) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T19:58:43.259,receptor,INFO,967,I (179768) wifi_receptor: RX 26 bytes: SEQ=967;PAYLOAD=wifi-test,rx,,26,-44,100,1
+2026-10-22T19:58:43.259,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T19:58:44.798,receptor,INFO,,"I (180788) wifi_receptor: Enlace WiFi: RSSI=-43 dBm, calidad=100%, canal=1",wifi_quality,,,-43,100,1
+2026-10-22T19:58:44.799,receptor,INFO,968,I (180788) wifi_receptor: RX 26 bytes: SEQ=968;PAYLOAD=wifi-test,rx,,26,-43,100,1
+2026-10-22T19:58:44.799,receptor,INFO,,,log,,,-43,100,1
+2026-10-22T19:58:45.305,receptor,INFO,,"I (181818) wifi_receptor: Enlace WiFi: RSSI=-42 dBm, calidad=100%, canal=1",wifi_quality,,,-42,100,1
+2026-10-22T19:58:45.306,receptor,INFO,969,I (181818) wifi_receptor: RX 26 bytes: SEQ=969;PAYLOAD=wifi-test,rx,,26,-42,100,1
+2026-10-22T19:58:45.306,receptor,INFO,,,log,,,-42,100,1
+2026-10-22T19:58:46.331,receptor,INFO,,"I (182838) wifi_receptor: Enlace WiFi: RSSI=-47 dBm, calidad=100%, canal=1",wifi_quality,,,-47,100,1
+2026-10-22T19:58:46.332,receptor,INFO,970,I (182838) wifi_receptor: RX 26 bytes: SEQ=970;PAYLOAD=wifi-test,rx,,26,-47,100,1
+2026-10-22T19:58:46.333,receptor,INFO,,,log,,,-47,100,1
+2026-10-22T19:58:47.352,receptor,INFO,,"I (183858) wifi_receptor: Enlace WiFi: RSSI=-41 dBm, calidad=100%, canal=1",wifi_quality,,,-41,100,1
+2026-10-22T19:58:48.917,receptor,INFO,971,I (183858) wifi_receptor: RX 26 bytes: SEQ=971;PAYLOAD=wifi-test,rx,,26,-41,100,1
+2026-10-22T19:58:48.917,receptor,INFO,,,log,,,-41,100,1
+2026-10-22T19:58:48.918,receptor,INFO,,"I (184888) wifi_receptor: Enlace WiFi: RSSI=-40 dBm, calidad=100%, canal=1",wifi_quality,,,-40,100,1
+2026-10-22T19:58:48.920,receptor,INFO,972,I (184888) wifi_receptor: RX 26 bytes: SEQ=972;PAYLOAD=wifi-test,rx,,26,-40,100,1
+2026-10-22T19:58:48.920,receptor,INFO,,,log,,,-40,100,1
+2026-10-22T19:58:49.401,receptor,INFO,,"I (185908) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T19:58:49.402,receptor,INFO,973,I (185908) wifi_receptor: RX 26 bytes: SEQ=973;PAYLOAD=wifi-test,rx,,26,-46,100,1
+2026-10-22T19:58:49.402,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T19:58:50.425,receptor,INFO,,"I (186938) wifi_receptor: Enlace WiFi: RSSI=-48 dBm, calidad=100%, canal=1",wifi_quality,,,-48,100,1
+2026-10-22T19:58:50.426,receptor,INFO,974,I (186938) wifi_receptor: RX 26 bytes: SEQ=974;PAYLOAD=wifi-test,rx,,26,-48,100,1
+2026-10-22T19:58:51.897,receptor,INFO,,,log,,,-48,100,1
+2026-10-22T19:58:51.899,receptor,INFO,,"I (187958) wifi_receptor: Enlace WiFi: RSSI=-47 dBm, calidad=100%, canal=1",wifi_quality,,,-47,100,1
+2026-10-22T19:58:51.900,receptor,INFO,975,I (187958) wifi_receptor: RX 26 bytes: SEQ=975;PAYLOAD=wifi-test,rx,,26,-47,100,1
+2026-10-22T19:58:51.900,receptor,INFO,,,log,,,-47,100,1
+2026-10-22T19:58:52.476,receptor,INFO,,"I (188988) wifi_receptor: Enlace WiFi: RSSI=-49 dBm, calidad=100%, canal=1",wifi_quality,,,-49,100,1
+2026-10-22T19:58:52.478,receptor,INFO,976,I (188988) wifi_receptor: RX 26 bytes: SEQ=976;PAYLOAD=wifi-test,rx,,26,-49,100,1
+2026-10-22T19:58:52.478,receptor,INFO,,,log,,,-49,100,1
+2026-10-22T19:58:53.497,receptor,INFO,,"I (190008) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:58:53.499,receptor,INFO,977,I (190008) wifi_receptor: RX 26 bytes: SEQ=977;PAYLOAD=wifi-test,rx,,26,-45,100,1
+2026-10-22T19:58:53.500,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:58:54.919,receptor,INFO,,"I (191028) wifi_receptor: Enlace WiFi: RSSI=-39 dBm, calidad=100%, canal=1",wifi_quality,,,-39,100,1
+2026-10-22T19:58:54.920,receptor,INFO,978,I (191028) wifi_receptor: RX 26 bytes: SEQ=978;PAYLOAD=wifi-test,rx,,26,-39,100,1
+2026-10-22T19:58:54.920,receptor,INFO,,,log,,,-39,100,1
+2026-10-22T19:58:55.545,receptor,INFO,,"I (192058) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T19:58:55.547,receptor,INFO,979,I (192058) wifi_receptor: RX 26 bytes: SEQ=979;PAYLOAD=wifi-test,rx,,26,-46,100,1
+2026-10-22T19:58:55.547,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T19:58:56.581,receptor,INFO,,"I (193088) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T19:58:56.583,receptor,INFO,980,I (193088) wifi_receptor: RX 26 bytes: SEQ=980;PAYLOAD=wifi-test,rx,,26,-46,100,1
+2026-10-22T19:58:56.583,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T19:58:57.695,receptor,INFO,,"I (194208) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T19:58:59.200,receptor,INFO,981,I (194208) wifi_receptor: RX 26 bytes: SEQ=981;PAYLOAD=wifi-test,rx,,26,-46,100,1
+2026-10-22T19:58:59.200,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T19:58:59.201,receptor,INFO,,"I (195328) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:58:59.203,receptor,INFO,982,I (195328) wifi_receptor: RX 26 bytes: SEQ=982;PAYLOAD=wifi-test,rx,,26,-45,100,1
+2026-10-22T19:58:59.203,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:58:59.845,receptor,INFO,,"I (196358) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:58:59.847,receptor,INFO,983,I (196358) wifi_receptor: RX 26 bytes: SEQ=983;PAYLOAD=wifi-test,rx,,26,-45,100,1
+2026-10-22T19:58:59.847,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:59:00.870,receptor,INFO,,"I (197378) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T19:59:00.872,receptor,INFO,984,I (197378) wifi_receptor: RX 26 bytes: SEQ=984;PAYLOAD=wifi-test,rx,,26,-44,100,1
+2026-10-22T19:59:02.418,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T19:59:02.419,receptor,INFO,,"I (198398) wifi_receptor: Enlace WiFi: RSSI=-41 dBm, calidad=100%, canal=1",wifi_quality,,,-41,100,1
+2026-10-22T19:59:02.421,receptor,INFO,985,I (198408) wifi_receptor: RX 26 bytes: SEQ=985;PAYLOAD=wifi-test,rx,,26,-41,100,1
+2026-10-22T19:59:02.421,receptor,INFO,,,log,,,-41,100,1
+2026-10-22T19:59:02.917,receptor,INFO,,"I (199428) wifi_receptor: Enlace WiFi: RSSI=-47 dBm, calidad=100%, canal=1",wifi_quality,,,-47,100,1
+2026-10-22T19:59:02.919,receptor,INFO,986,I (199428) wifi_receptor: RX 26 bytes: SEQ=986;PAYLOAD=wifi-test,rx,,26,-47,100,1
+2026-10-22T19:59:02.919,receptor,INFO,,,log,,,-47,100,1
+2026-10-22T19:59:03.943,receptor,INFO,,"I (200448) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T19:59:03.945,receptor,INFO,987,I (200448) wifi_receptor: RX 26 bytes: SEQ=987;PAYLOAD=wifi-test,rx,,26,-46,100,1
+2026-10-22T19:59:03.945,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T19:59:05.483,receptor,INFO,,"I (201478) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:59:05.485,receptor,INFO,988,I (201478) wifi_receptor: RX 26 bytes: SEQ=988;PAYLOAD=wifi-test,rx,,26,-45,100,1
+2026-10-22T19:59:05.485,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:59:05.992,receptor,INFO,,"I (202498) wifi_receptor: Enlace WiFi: RSSI=-43 dBm, calidad=100%, canal=1",wifi_quality,,,-43,100,1
+2026-10-22T19:59:05.994,receptor,INFO,989,I (202498) wifi_receptor: RX 26 bytes: SEQ=989;PAYLOAD=wifi-test,rx,,26,-43,100,1
+2026-10-22T19:59:05.994,receptor,INFO,,,log,,,-43,100,1
+2026-10-22T19:59:07.016,receptor,INFO,,"I (203528) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T19:59:07.019,receptor,INFO,990,I (203528) wifi_receptor: RX 26 bytes: SEQ=990;PAYLOAD=wifi-test,rx,,26,-46,100,1
+2026-10-22T19:59:07.019,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T19:59:08.038,receptor,INFO,,"I (204548) wifi_receptor: Enlace WiFi: RSSI=-43 dBm, calidad=100%, canal=1",wifi_quality,,,-43,100,1
+2026-10-22T19:59:09.445,receptor,INFO,991,I (204548) wifi_receptor: RX 26 bytes: SEQ=991;PAYLOAD=wifi-test,rx,,26,-43,100,1
+2026-10-22T19:59:09.445,receptor,INFO,,,log,,,-43,100,1
+2026-10-22T19:59:09.446,receptor,INFO,,"I (205568) wifi_receptor: Enlace WiFi: RSSI=-43 dBm, calidad=100%, canal=1",wifi_quality,,,-43,100,1
+2026-10-22T19:59:09.448,receptor,INFO,992,I (205568) wifi_receptor: RX 26 bytes: SEQ=992;PAYLOAD=wifi-test,rx,,26,-43,100,1
+2026-10-22T19:59:09.448,receptor,INFO,,,log,,,-43,100,1
+2026-10-22T19:59:10.086,receptor,INFO,,"I (206598) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T19:59:10.087,receptor,INFO,993,I (206598) wifi_receptor: RX 26 bytes: SEQ=993;PAYLOAD=wifi-test,rx,,26,-46,100,1
+2026-10-22T19:59:10.087,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T19:59:11.110,receptor,INFO,,"I (207618) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T19:59:11.112,receptor,INFO,994,I (207618) wifi_receptor: RX 26 bytes: SEQ=994;PAYLOAD=wifi-test,rx,,26,-44,100,1
+2026-10-22T19:59:12.573,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T19:59:12.574,receptor,INFO,,"I (208648) wifi_receptor: Enlace WiFi: RSSI=-42 dBm, calidad=100%, canal=1",wifi_quality,,,-42,100,1
+2026-10-22T19:59:12.576,receptor,INFO,995,I (208648) wifi_receptor: RX 26 bytes: SEQ=995;PAYLOAD=wifi-test,rx,,26,-42,100,1
+2026-10-22T19:59:12.576,receptor,INFO,,,log,,,-42,100,1
+2026-10-22T19:59:13.157,receptor,INFO,,"I (209668) wifi_receptor: Enlace WiFi: RSSI=-49 dBm, calidad=100%, canal=1",wifi_quality,,,-49,100,1
+2026-10-22T19:59:13.159,receptor,INFO,996,I (209668) wifi_receptor: RX 26 bytes: SEQ=996;PAYLOAD=wifi-test,rx,,26,-49,100,1
+2026-10-22T19:59:13.159,receptor,INFO,,,log,,,-49,100,1
+2026-10-22T19:59:14.181,receptor,INFO,,"I (210688) wifi_receptor: Enlace WiFi: RSSI=-40 dBm, calidad=100%, canal=1",wifi_quality,,,-40,100,1
+2026-10-22T19:59:14.183,receptor,INFO,997,I (210688) wifi_receptor: RX 26 bytes: SEQ=997;PAYLOAD=wifi-test,rx,,26,-40,100,1
+2026-10-22T19:59:14.183,receptor,INFO,,,log,,,-40,100,1
+2026-10-22T19:59:15.643,receptor,INFO,,"I (211718) wifi_receptor: Enlace WiFi: RSSI=-41 dBm, calidad=100%, canal=1",wifi_quality,,,-41,100,1
+2026-10-22T19:59:15.645,receptor,INFO,998,I (211718) wifi_receptor: RX 26 bytes: SEQ=998;PAYLOAD=wifi-test,rx,,26,-41,100,1
+2026-10-22T19:59:15.645,receptor,INFO,,,log,,,-41,100,1
+2026-10-22T19:59:16.229,receptor,INFO,,"I (212738) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T19:59:16.231,receptor,INFO,999,I (212738) wifi_receptor: RX 26 bytes: SEQ=999;PAYLOAD=wifi-test,rx,,26,-44,100,1
+2026-10-22T19:59:16.232,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T19:59:17.253,receptor,INFO,,"I (213758) wifi_receptor: Enlace WiFi: RSSI=-41 dBm, calidad=100%, canal=1",wifi_quality,,,-41,100,1
+2026-10-22T19:59:17.255,receptor,INFO,1000,I (213768) wifi_receptor: RX 27 bytes: SEQ=1000;PAYLOAD=wifi-test,rx,,27,-41,100,1
+2026-10-22T19:59:17.255,receptor,INFO,,,log,,,-41,100,1
+2026-10-22T19:59:18.278,receptor,INFO,,"I (214788) wifi_receptor: Enlace WiFi: RSSI=-43 dBm, calidad=100%, canal=1",wifi_quality,,,-43,100,1
+2026-10-22T19:59:19.661,receptor,INFO,1001,I (214788) wifi_receptor: RX 27 bytes: SEQ=1001;PAYLOAD=wifi-test,rx,,27,-43,100,1
+2026-10-22T19:59:19.662,receptor,INFO,,,log,,,-43,100,1
+2026-10-22T19:59:19.664,receptor,INFO,,"I (215808) wifi_receptor: Enlace WiFi: RSSI=-41 dBm, calidad=100%, canal=1",wifi_quality,,,-41,100,1
+2026-10-22T19:59:19.667,receptor,INFO,1002,I (215808) wifi_receptor: RX 27 bytes: SEQ=1002;PAYLOAD=wifi-test,rx,,27,-41,100,1
+2026-10-22T19:59:19.668,receptor,INFO,,,log,,,-41,100,1
+2026-10-22T19:59:20.325,receptor,INFO,,"I (216838) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:59:20.327,receptor,INFO,1003,I (216838) wifi_receptor: RX 27 bytes: SEQ=1003;PAYLOAD=wifi-test,rx,,27,-45,100,1
+2026-10-22T19:59:20.327,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:59:21.349,receptor,INFO,,"I (217858) wifi_receptor: Enlace WiFi: RSSI=-40 dBm, calidad=100%, canal=1",wifi_quality,,,-40,100,1
+2026-10-22T19:59:21.353,receptor,INFO,1004,I (217858) wifi_receptor: RX 27 bytes: SEQ=1004;PAYLOAD=wifi-test,rx,,27,-40,100,1
+2026-10-22T19:59:22.768,receptor,INFO,,,log,,,-40,100,1
+2026-10-22T19:59:22.770,receptor,INFO,,"I (218888) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:59:22.772,receptor,INFO,1005,I (218888) wifi_receptor: RX 27 bytes: SEQ=1005;PAYLOAD=wifi-test,rx,,27,-45,100,1
+2026-10-22T19:59:22.772,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:59:23.397,receptor,INFO,,"I (219908) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T19:59:23.399,receptor,INFO,1006,I (219908) wifi_receptor: RX 27 bytes: SEQ=1006;PAYLOAD=wifi-test,rx,,27,-44,100,1
+2026-10-22T19:59:23.399,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T19:59:24.422,receptor,INFO,,"I (220928) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T19:59:24.423,receptor,INFO,1007,I (220928) wifi_receptor: RX 27 bytes: SEQ=1007;PAYLOAD=wifi-test,rx,,27,-46,100,1
+2026-10-22T19:59:24.423,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T19:59:25.974,receptor,INFO,,"I (221958) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T19:59:25.976,receptor,INFO,1008,I (221958) wifi_receptor: RX 27 bytes: SEQ=1008;PAYLOAD=wifi-test,rx,,27,-46,100,1
+2026-10-22T19:59:25.976,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T19:59:26.472,receptor,INFO,,"I (222978) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T19:59:26.473,receptor,INFO,1009,I (222978) wifi_receptor: RX 27 bytes: SEQ=1009;PAYLOAD=wifi-test,rx,,27,-44,100,1
+2026-10-22T19:59:26.474,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T19:59:27.596,receptor,INFO,,"I (224108) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T19:59:27.598,receptor,INFO,1010,I (224108) wifi_receptor: RX 27 bytes: SEQ=1010;PAYLOAD=wifi-test,rx,,27,-44,100,1
+2026-10-22T19:59:27.598,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T19:59:28.825,receptor,INFO,,"I (225338) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:59:30.320,receptor,INFO,1011,I (225338) wifi_receptor: RX 27 bytes: SEQ=1011;PAYLOAD=wifi-test,rx,,27,-45,100,1
+2026-10-22T19:59:30.320,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:59:30.322,receptor,INFO,,"I (226468) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T19:59:30.324,receptor,INFO,1012,I (226468) wifi_receptor: RX 27 bytes: SEQ=1012;PAYLOAD=wifi-test,rx,,27,-44,100,1
+2026-10-22T19:59:30.325,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T19:59:30.975,receptor,INFO,,"I (227488) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:59:30.977,receptor,INFO,1013,I (227488) wifi_receptor: RX 27 bytes: SEQ=1013;PAYLOAD=wifi-test,rx,,27,-45,100,1
+2026-10-22T19:59:30.977,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:59:31.999,receptor,INFO,,"I (228508) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T19:59:32.004,receptor,INFO,1014,I (228508) wifi_receptor: RX 27 bytes: SEQ=1014;PAYLOAD=wifi-test,rx,,27,-46,100,1
+2026-10-22T19:59:33.518,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T19:59:33.519,receptor,INFO,,"I (229638) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:59:33.522,receptor,INFO,1015,I (229638) wifi_receptor: RX 27 bytes: SEQ=1015;PAYLOAD=wifi-test,rx,,27,-45,100,1
+2026-10-22T19:59:33.522,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:59:34.254,receptor,INFO,,"I (230768) wifi_receptor: Enlace WiFi: RSSI=-43 dBm, calidad=100%, canal=1",wifi_quality,,,-43,100,1
+2026-10-22T19:59:34.261,receptor,INFO,1016,I (230768) wifi_receptor: RX 27 bytes: SEQ=1016;PAYLOAD=wifi-test,rx,,27,-43,100,1
+2026-10-22T19:59:34.261,receptor,INFO,,,log,,,-43,100,1
+2026-10-22T19:59:35.276,receptor,INFO,,"I (231788) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T19:59:35.278,receptor,INFO,1017,I (231788) wifi_receptor: RX 27 bytes: SEQ=1017;PAYLOAD=wifi-test,rx,,27,-46,100,1
+2026-10-22T19:59:35.278,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T19:59:36.774,receptor,INFO,,"I (232808) wifi_receptor: Enlace WiFi: RSSI=-48 dBm, calidad=100%, canal=1",wifi_quality,,,-48,100,1
+2026-10-22T19:59:36.775,receptor,INFO,1018,I (232808) wifi_receptor: RX 27 bytes: SEQ=1018;PAYLOAD=wifi-test,rx,,27,-48,100,1
+2026-10-22T19:59:36.775,receptor,INFO,,,log,,,-48,100,1
+2026-10-22T19:59:37.324,receptor,INFO,,"I (233838) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T19:59:37.325,receptor,INFO,1019,I (233838) wifi_receptor: RX 27 bytes: SEQ=1019;PAYLOAD=wifi-test,rx,,27,-46,100,1
+2026-10-22T19:59:37.325,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T19:59:38.450,receptor,INFO,,"I (234958) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:59:38.452,receptor,INFO,1020,I (234958) wifi_receptor: RX 27 bytes: SEQ=1020;PAYLOAD=wifi-test,rx,,27,-45,100,1
+2026-10-22T19:59:38.452,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:59:39.594,receptor,INFO,,"I (236108) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:59:41.048,receptor,INFO,1021,I (236108) wifi_receptor: RX 27 bytes: SEQ=1021;PAYLOAD=wifi-test,rx,,27,-45,100,1
+2026-10-22T19:59:41.048,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:59:41.050,receptor,INFO,,"I (237208) wifi_receptor: Enlace WiFi: RSSI=-49 dBm, calidad=100%, canal=1",wifi_quality,,,-49,100,1
+2026-10-22T19:59:41.051,receptor,INFO,1022,I (237218) wifi_receptor: RX 27 bytes: SEQ=1022;PAYLOAD=wifi-test,rx,,27,-49,100,1
+2026-10-22T19:59:41.051,receptor,INFO,,,log,,,-49,100,1
+2026-10-22T19:59:41.727,receptor,INFO,,"I (238238) wifi_receptor: Enlace WiFi: RSSI=-48 dBm, calidad=100%, canal=1",wifi_quality,,,-48,100,1
+2026-10-22T19:59:41.728,receptor,INFO,1023,I (238238) wifi_receptor: RX 27 bytes: SEQ=1023;PAYLOAD=wifi-test,rx,,27,-48,100,1
+2026-10-22T19:59:41.728,receptor,INFO,,,log,,,-48,100,1
+2026-10-22T19:59:42.751,receptor,INFO,,"I (239258) wifi_receptor: Enlace WiFi: RSSI=-47 dBm, calidad=100%, canal=1",wifi_quality,,,-47,100,1
+2026-10-22T19:59:42.752,receptor,INFO,1024,I (239258) wifi_receptor: RX 27 bytes: SEQ=1024;PAYLOAD=wifi-test,rx,,27,-47,100,1
+2026-10-22T19:59:44.259,receptor,INFO,,,log,,,-47,100,1
+2026-10-22T19:59:44.260,receptor,INFO,,"I (240288) wifi_receptor: Enlace WiFi: RSSI=-47 dBm, calidad=100%, canal=1",wifi_quality,,,-47,100,1
+2026-10-22T19:59:44.261,receptor,INFO,1025,I (240288) wifi_receptor: RX 27 bytes: SEQ=1025;PAYLOAD=wifi-test,rx,,27,-47,100,1
+2026-10-22T19:59:44.262,receptor,INFO,,,log,,,-47,100,1
+2026-10-22T19:59:44.803,receptor,INFO,,"I (241308) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:59:44.804,receptor,INFO,1026,I (241318) wifi_receptor: RX 27 bytes: SEQ=1026;PAYLOAD=wifi-test,rx,,27,-45,100,1
+2026-10-22T19:59:44.804,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:59:45.823,receptor,INFO,,"I (242328) wifi_receptor: Enlace WiFi: RSSI=-49 dBm, calidad=100%, canal=1",wifi_quality,,,-49,100,1
+2026-10-22T19:59:45.826,receptor,INFO,1027,I (242338) wifi_receptor: RX 27 bytes: SEQ=1027;PAYLOAD=wifi-test,rx,,27,-49,100,1
+2026-10-22T19:59:45.826,receptor,INFO,,,log,,,-49,100,1
+2026-10-22T19:59:47.265,receptor,INFO,,"I (243358) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T19:59:47.266,receptor,INFO,1028,I (243358) wifi_receptor: RX 27 bytes: SEQ=1028;PAYLOAD=wifi-test,rx,,27,-46,100,1
+2026-10-22T19:59:47.267,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T19:59:47.871,receptor,INFO,,"I (244378) wifi_receptor: Enlace WiFi: RSSI=-48 dBm, calidad=100%, canal=1",wifi_quality,,,-48,100,1
+2026-10-22T19:59:47.873,receptor,INFO,1029,I (244378) wifi_receptor: RX 27 bytes: SEQ=1029;PAYLOAD=wifi-test,rx,,27,-48,100,1
+2026-10-22T19:59:47.873,receptor,INFO,,,log,,,-48,100,1
+2026-10-22T19:59:48.895,receptor,INFO,,"I (245408) wifi_receptor: Enlace WiFi: RSSI=-47 dBm, calidad=100%, canal=1",wifi_quality,,,-47,100,1
+2026-10-22T19:59:48.896,receptor,INFO,1030,I (245408) wifi_receptor: RX 27 bytes: SEQ=1030;PAYLOAD=wifi-test,rx,,27,-47,100,1
+2026-10-22T19:59:48.897,receptor,INFO,,,log,,,-47,100,1
+2026-10-22T19:59:49.919,receptor,INFO,,"I (246428) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T19:59:51.374,receptor,INFO,1031,I (246428) wifi_receptor: RX 27 bytes: SEQ=1031;PAYLOAD=wifi-test,rx,,27,-44,100,1
+2026-10-22T19:59:51.374,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T19:59:51.376,receptor,INFO,,"I (247458) wifi_receptor: Enlace WiFi: RSSI=-48 dBm, calidad=100%, canal=1",wifi_quality,,,-48,100,1
+2026-10-22T19:59:51.377,receptor,INFO,1032,I (247458) wifi_receptor: RX 27 bytes: SEQ=1032;PAYLOAD=wifi-test,rx,,27,-48,100,1
+2026-10-22T19:59:51.377,receptor,INFO,,,log,,,-48,100,1
+2026-10-22T19:59:51.967,receptor,INFO,,"I (248478) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T19:59:51.969,receptor,INFO,1033,I (248478) wifi_receptor: RX 27 bytes: SEQ=1033;PAYLOAD=wifi-test,rx,,27,-46,100,1
+2026-10-22T19:59:51.969,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T19:59:53.095,receptor,INFO,,"I (249608) wifi_receptor: Enlace WiFi: RSSI=-43 dBm, calidad=100%, canal=1",wifi_quality,,,-43,100,1
+2026-10-22T19:59:53.097,receptor,INFO,1034,I (249608) wifi_receptor: RX 27 bytes: SEQ=1034;PAYLOAD=wifi-test,rx,,27,-43,100,1
+2026-10-22T19:59:54.599,receptor,INFO,,,log,,,-43,100,1
+2026-10-22T19:59:54.600,receptor,INFO,,"I (250728) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T19:59:54.602,receptor,INFO,1035,I (250728) wifi_receptor: RX 27 bytes: SEQ=1035;PAYLOAD=wifi-test,rx,,27,-46,100,1
+2026-10-22T19:59:54.602,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T19:59:55.244,receptor,INFO,,"I (251758) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T19:59:55.245,receptor,INFO,1036,I (251758) wifi_receptor: RX 27 bytes: SEQ=1036;PAYLOAD=wifi-test,rx,,27,-45,100,1
+2026-10-22T19:59:55.246,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T19:59:56.269,receptor,INFO,,"I (252778) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T19:59:56.270,receptor,INFO,1037,I (252778) wifi_receptor: RX 27 bytes: SEQ=1037;PAYLOAD=wifi-test,rx,,27,-44,100,1
+2026-10-22T19:59:56.270,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T19:59:57.808,receptor,INFO,,"I (253798) wifi_receptor: Enlace WiFi: RSSI=-47 dBm, calidad=100%, canal=1",wifi_quality,,,-47,100,1
+2026-10-22T19:59:57.809,receptor,INFO,1038,I (253798) wifi_receptor: RX 27 bytes: SEQ=1038;PAYLOAD=wifi-test,rx,,27,-47,100,1
+2026-10-22T19:59:57.809,receptor,INFO,,,log,,,-47,100,1
+2026-10-22T19:59:58.315,receptor,INFO,,"I (254828) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T19:59:58.317,receptor,INFO,1039,I (254828) wifi_receptor: RX 27 bytes: SEQ=1039;PAYLOAD=wifi-test,rx,,27,-46,100,1
+2026-10-22T19:59:58.317,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T19:59:59.339,receptor,INFO,,"I (255848) wifi_receptor: Enlace WiFi: RSSI=-42 dBm, calidad=100%, canal=1",wifi_quality,,,-42,100,1
+2026-10-22T19:59:59.341,receptor,INFO,1040,I (255848) wifi_receptor: RX 27 bytes: SEQ=1040;PAYLOAD=wifi-test,rx,,27,-42,100,1
+2026-10-22T19:59:59.341,receptor,INFO,,,log,,,-42,100,1
+2026-10-22T20:00:00.364,receptor,INFO,,"I (256878) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T20:00:01.709,receptor,INFO,1041,I (256878) wifi_receptor: RX 27 bytes: SEQ=1041;PAYLOAD=wifi-test,rx,,27,-46,100,1
+2026-10-22T20:00:01.709,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T20:00:01.710,receptor,INFO,,"I (257898) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T20:00:01.711,receptor,INFO,1042,I (257898) wifi_receptor: RX 27 bytes: SEQ=1042;PAYLOAD=wifi-test,rx,,27,-45,100,1
+2026-10-22T20:00:01.711,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T20:00:02.514,receptor,INFO,,"I (259028) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T20:00:02.516,receptor,INFO,1043,I (259028) wifi_receptor: RX 27 bytes: SEQ=1043;PAYLOAD=wifi-test,rx,,27,-46,100,1
+2026-10-22T20:00:02.516,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T20:00:03.640,receptor,INFO,,"I (260148) wifi_receptor: Enlace WiFi: RSSI=-43 dBm, calidad=100%, canal=1",wifi_quality,,,-43,100,1
+2026-10-22T20:00:03.642,receptor,INFO,1044,I (260148) wifi_receptor: RX 27 bytes: SEQ=1044;PAYLOAD=wifi-test,rx,,27,-43,100,1
+2026-10-22T20:00:05.007,receptor,INFO,,,log,,,-43,100,1
+2026-10-22T20:00:05.009,receptor,INFO,,"I (261178) wifi_receptor: Enlace WiFi: RSSI=-41 dBm, calidad=100%, canal=1",wifi_quality,,,-41,100,1
+2026-10-22T20:00:05.009,receptor,INFO,1045,I (261178) wifi_receptor: RX 27 bytes: SEQ=1045;PAYLOAD=wifi-test,rx,,27,-41,100,1
+2026-10-22T20:00:05.010,receptor,INFO,,,log,,,-41,100,1
+2026-10-22T20:00:05.688,receptor,INFO,,"I (262198) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T20:00:05.690,receptor,INFO,1046,I (262198) wifi_receptor: RX 27 bytes: SEQ=1046;PAYLOAD=wifi-test,rx,,27,-44,100,1
+2026-10-22T20:00:05.692,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T20:00:06.714,receptor,INFO,,"I (263228) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T20:00:06.715,receptor,INFO,1047,I (263228) wifi_receptor: RX 27 bytes: SEQ=1047;PAYLOAD=wifi-test,rx,,27,-44,100,1
+2026-10-22T20:00:06.716,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T20:00:08.059,receptor,INFO,,"I (264248) wifi_receptor: Enlace WiFi: RSSI=-43 dBm, calidad=100%, canal=1",wifi_quality,,,-43,100,1
+2026-10-22T20:00:08.060,receptor,INFO,1048,I (264248) wifi_receptor: RX 27 bytes: SEQ=1048;PAYLOAD=wifi-test,rx,,27,-43,100,1
+2026-10-22T20:00:08.060,receptor,INFO,,,log,,,-43,100,1
+2026-10-22T20:00:08.760,receptor,INFO,,"I (265268) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T20:00:08.762,receptor,INFO,1049,I (265268) wifi_receptor: RX 27 bytes: SEQ=1049;PAYLOAD=wifi-test,rx,,27,-45,100,1
+2026-10-22T20:00:08.763,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T20:00:09.784,receptor,INFO,,"I (266298) wifi_receptor: Enlace WiFi: RSSI=-43 dBm, calidad=100%, canal=1",wifi_quality,,,-43,100,1
+2026-10-22T20:00:09.786,receptor,INFO,1050,I (266298) wifi_receptor: RX 27 bytes: SEQ=1050;PAYLOAD=wifi-test,rx,,27,-43,100,1
+2026-10-22T20:00:09.786,receptor,INFO,,,log,,,-43,100,1
+2026-10-22T20:00:10.808,receptor,INFO,,"I (267318) wifi_receptor: Enlace WiFi: RSSI=-43 dBm, calidad=100%, canal=1",wifi_quality,,,-43,100,1
+2026-10-22T20:00:12.152,receptor,INFO,1051,I (267318) wifi_receptor: RX 27 bytes: SEQ=1051;PAYLOAD=wifi-test,rx,,27,-43,100,1
+2026-10-22T20:00:12.153,receptor,INFO,,,log,,,-43,100,1
+2026-10-22T20:00:12.153,receptor,INFO,,"I (268338) wifi_receptor: Enlace WiFi: RSSI=-36 dBm, calidad=100%, canal=1",wifi_quality,,,-36,100,1
+2026-10-22T20:00:12.154,receptor,INFO,1052,I (268348) wifi_receptor: RX 27 bytes: SEQ=1052;PAYLOAD=wifi-test,rx,,27,-36,100,1
+2026-10-22T20:00:12.154,receptor,INFO,,,log,,,-36,100,1
+2026-10-22T20:00:12.856,receptor,INFO,,"I (269368) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T20:00:12.858,receptor,INFO,1053,I (269368) wifi_receptor: RX 27 bytes: SEQ=1053;PAYLOAD=wifi-test,rx,,27,-44,100,1
+2026-10-22T20:00:12.858,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T20:00:13.880,receptor,INFO,,"I (270388) wifi_receptor: Enlace WiFi: RSSI=-47 dBm, calidad=100%, canal=1",wifi_quality,,,-47,100,1
+2026-10-22T20:00:13.889,receptor,INFO,1054,I (270388) wifi_receptor: RX 27 bytes: SEQ=1054;PAYLOAD=wifi-test,rx,,27,-47,100,1
+2026-10-22T20:00:15.252,receptor,INFO,,,log,,,-47,100,1
+2026-10-22T20:00:15.253,receptor,INFO,,"I (271418) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T20:00:15.254,receptor,INFO,1055,I (271418) wifi_receptor: RX 27 bytes: SEQ=1055;PAYLOAD=wifi-test,rx,,27,-44,100,1
+2026-10-22T20:00:15.254,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T20:00:15.928,receptor,INFO,,"I (272438) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T20:00:15.930,receptor,INFO,1056,I (272438) wifi_receptor: RX 27 bytes: SEQ=1056;PAYLOAD=wifi-test,rx,,27,-46,100,1
+2026-10-22T20:00:15.931,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T20:00:16.952,receptor,INFO,,"I (273458) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T20:00:16.954,receptor,INFO,1057,I (273468) wifi_receptor: RX 27 bytes: SEQ=1057;PAYLOAD=wifi-test,rx,,27,-45,100,1
+2026-10-22T20:00:16.954,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T20:00:18.320,receptor,INFO,,"I (274488) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T20:00:18.322,receptor,INFO,1058,I (274488) wifi_receptor: RX 27 bytes: SEQ=1058;PAYLOAD=wifi-test,rx,,27,-44,100,1
+2026-10-22T20:00:18.322,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T20:00:19.000,receptor,INFO,,"I (275508) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T20:00:19.002,receptor,INFO,1059,I (275508) wifi_receptor: RX 27 bytes: SEQ=1059;PAYLOAD=wifi-test,rx,,27,-46,100,1
+2026-10-22T20:00:19.002,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T20:00:20.024,receptor,INFO,,"I (276538) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T20:00:20.026,receptor,INFO,1060,I (276538) wifi_receptor: RX 27 bytes: SEQ=1060;PAYLOAD=wifi-test,rx,,27,-45,100,1
+2026-10-22T20:00:20.026,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T20:00:21.048,receptor,INFO,,"I (277558) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T20:00:22.401,receptor,INFO,1061,I (277558) wifi_receptor: RX 27 bytes: SEQ=1061;PAYLOAD=wifi-test,rx,,27,-45,100,1
+2026-10-22T20:00:22.401,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T20:00:22.402,receptor,INFO,,"I (278578) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T20:00:22.402,receptor,INFO,1062,I (278588) wifi_receptor: RX 27 bytes: SEQ=1062;PAYLOAD=wifi-test,rx,,27,-45,100,1
+2026-10-22T20:00:22.402,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T20:00:23.101,receptor,INFO,,"I (279608) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T20:00:23.102,receptor,INFO,1063,I (279608) wifi_receptor: RX 27 bytes: SEQ=1063;PAYLOAD=wifi-test,rx,,27,-44,100,1
+2026-10-22T20:00:23.103,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T20:00:24.121,receptor,INFO,,"I (280628) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T20:00:24.123,receptor,INFO,1064,I (280628) wifi_receptor: RX 27 bytes: SEQ=1064;PAYLOAD=wifi-test,rx,,27,-45,100,1
+2026-10-22T20:00:25.467,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T20:00:25.468,receptor,INFO,,"I (281658) wifi_receptor: Enlace WiFi: RSSI=-42 dBm, calidad=100%, canal=1",wifi_quality,,,-42,100,1
+2026-10-22T20:00:25.469,receptor,INFO,1065,I (281658) wifi_receptor: RX 27 bytes: SEQ=1065;PAYLOAD=wifi-test,rx,,27,-42,100,1
+2026-10-22T20:00:25.469,receptor,INFO,,,log,,,-42,100,1
+2026-10-22T20:00:26.168,receptor,INFO,,"I (282678) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T20:00:26.170,receptor,INFO,1066,I (282678) wifi_receptor: RX 27 bytes: SEQ=1066;PAYLOAD=wifi-test,rx,,27,-45,100,1
+2026-10-22T20:00:26.170,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T20:00:27.194,receptor,INFO,,"I (283708) wifi_receptor: Enlace WiFi: RSSI=-38 dBm, calidad=100%, canal=1",wifi_quality,,,-38,100,1
+2026-10-22T20:00:27.195,receptor,INFO,1067,I (283708) wifi_receptor: RX 27 bytes: SEQ=1067;PAYLOAD=wifi-test,rx,,27,-38,100,1
+2026-10-22T20:00:27.195,receptor,INFO,,,log,,,-38,100,1
+2026-10-22T20:00:28.536,receptor,INFO,,"I (284888) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T20:00:28.536,receptor,INFO,1068,I (284888) wifi_receptor: RX 27 bytes: SEQ=1068;PAYLOAD=wifi-test,rx,,27,-46,100,1
+2026-10-22T20:00:28.537,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T20:00:29.446,receptor,INFO,,"I (285958) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T20:00:29.447,receptor,INFO,1069,I (285958) wifi_receptor: RX 27 bytes: SEQ=1069;PAYLOAD=wifi-test,rx,,27,-45,100,1
+2026-10-22T20:00:29.448,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T20:00:30.571,receptor,INFO,,"I (287078) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T20:00:30.573,receptor,INFO,1070,I (287088) wifi_receptor: RX 27 bytes: SEQ=1070;PAYLOAD=wifi-test,rx,,27,-46,100,1
+2026-10-22T20:00:30.574,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T20:00:31.698,receptor,INFO,,"I (288208) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T20:00:33.080,receptor,INFO,1071,I (288208) wifi_receptor: RX 27 bytes: SEQ=1071;PAYLOAD=wifi-test,rx,,27,-45,100,1
+2026-10-22T20:00:33.080,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T20:00:33.081,receptor,INFO,,"I (289238) wifi_receptor: Enlace WiFi: RSSI=-42 dBm, calidad=100%, canal=1",wifi_quality,,,-42,100,1
+2026-10-22T20:00:33.083,receptor,INFO,1072,I (289238) wifi_receptor: RX 27 bytes: SEQ=1072;PAYLOAD=wifi-test,rx,,27,-42,100,1
+2026-10-22T20:00:33.085,receptor,INFO,,,log,,,-42,100,1
+2026-10-22T20:00:33.746,receptor,INFO,,"I (290258) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T20:00:33.747,receptor,INFO,1073,I (290258) wifi_receptor: RX 27 bytes: SEQ=1073;PAYLOAD=wifi-test,rx,,27,-45,100,1
+2026-10-22T20:00:33.748,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T20:00:34.770,receptor,INFO,,"I (291278) wifi_receptor: Enlace WiFi: RSSI=-41 dBm, calidad=100%, canal=1",wifi_quality,,,-41,100,1
+2026-10-22T20:00:34.771,receptor,INFO,1074,I (291278) wifi_receptor: RX 27 bytes: SEQ=1074;PAYLOAD=wifi-test,rx,,27,-41,100,1
+2026-10-22T20:00:36.150,receptor,INFO,,,log,,,-41,100,1
+2026-10-22T20:00:36.151,receptor,INFO,,"I (292308) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T20:00:36.152,receptor,INFO,1075,I (292308) wifi_receptor: RX 27 bytes: SEQ=1075;PAYLOAD=wifi-test,rx,,27,-44,100,1
+2026-10-22T20:00:36.152,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T20:00:36.818,receptor,INFO,,"I (293328) wifi_receptor: Enlace WiFi: RSSI=-43 dBm, calidad=100%, canal=1",wifi_quality,,,-43,100,1
+2026-10-22T20:00:36.820,receptor,INFO,1076,I (293328) wifi_receptor: RX 27 bytes: SEQ=1076;PAYLOAD=wifi-test,rx,,27,-43,100,1
+2026-10-22T20:00:36.821,receptor,INFO,,,log,,,-43,100,1
+2026-10-22T20:00:37.842,receptor,INFO,,"I (294348) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T20:00:37.843,receptor,INFO,1077,I (294358) wifi_receptor: RX 27 bytes: SEQ=1077;PAYLOAD=wifi-test,rx,,27,-45,100,1
+2026-10-22T20:00:37.845,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T20:00:39.170,receptor,INFO,,"I (295378) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T20:00:39.171,receptor,INFO,1078,I (295378) wifi_receptor: RX 27 bytes: SEQ=1078;PAYLOAD=wifi-test,rx,,27,-45,100,1
+2026-10-22T20:00:39.171,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T20:00:39.890,receptor,INFO,,"I (296398) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T20:00:39.892,receptor,INFO,1079,I (296398) wifi_receptor: RX 27 bytes: SEQ=1079;PAYLOAD=wifi-test,rx,,27,-45,100,1
+2026-10-22T20:00:39.892,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T20:00:40.914,receptor,INFO,,"I (297428) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T20:00:40.916,receptor,INFO,1080,I (297428) wifi_receptor: RX 27 bytes: SEQ=1080;PAYLOAD=wifi-test,rx,,27,-45,100,1
+2026-10-22T20:00:40.917,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T20:00:41.940,receptor,INFO,,"I (298448) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T20:00:43.302,receptor,INFO,1081,I (298448) wifi_receptor: RX 27 bytes: SEQ=1081;PAYLOAD=wifi-test,rx,,27,-45,100,1
+2026-10-22T20:00:43.302,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T20:00:43.303,receptor,INFO,,"I (299478) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T20:00:43.303,receptor,INFO,1082,I (299478) wifi_receptor: RX 27 bytes: SEQ=1082;PAYLOAD=wifi-test,rx,,27,-45,100,1
+2026-10-22T20:00:43.304,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T20:00:43.986,receptor,INFO,,"I (300498) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T20:00:43.987,receptor,INFO,1083,I (300498) wifi_receptor: RX 27 bytes: SEQ=1083;PAYLOAD=wifi-test,rx,,27,-46,100,1
+2026-10-22T20:00:43.987,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T20:00:45.010,receptor,INFO,,"I (301518) wifi_receptor: Enlace WiFi: RSSI=-42 dBm, calidad=100%, canal=1",wifi_quality,,,-42,100,1
+2026-10-22T20:00:45.011,receptor,INFO,1084,I (301518) wifi_receptor: RX 27 bytes: SEQ=1084;PAYLOAD=wifi-test,rx,,27,-42,100,1
+2026-10-22T20:00:46.373,receptor,INFO,,,log,,,-42,100,1
+2026-10-22T20:00:46.375,receptor,INFO,,"I (302548) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T20:00:46.376,receptor,INFO,1085,I (302548) wifi_receptor: RX 27 bytes: SEQ=1085;PAYLOAD=wifi-test,rx,,27,-45,100,1
+2026-10-22T20:00:46.376,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T20:00:47.058,receptor,INFO,,"I (303568) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T20:00:47.060,receptor,INFO,1086,I (303568) wifi_receptor: RX 27 bytes: SEQ=1086;PAYLOAD=wifi-test,rx,,27,-45,100,1
+2026-10-22T20:00:47.060,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T20:00:48.083,receptor,INFO,,"I (304598) wifi_receptor: Enlace WiFi: RSSI=-38 dBm, calidad=100%, canal=1",wifi_quality,,,-38,100,1
+2026-10-22T20:00:48.085,receptor,INFO,1087,I (304598) wifi_receptor: RX 27 bytes: SEQ=1087;PAYLOAD=wifi-test,rx,,27,-38,100,1
+2026-10-22T20:00:48.085,receptor,INFO,,,log,,,-38,100,1
+2026-10-22T20:00:49.556,receptor,INFO,,"I (305618) wifi_receptor: Enlace WiFi: RSSI=-40 dBm, calidad=100%, canal=1",wifi_quality,,,-40,100,1
+2026-10-22T20:00:49.559,receptor,INFO,1088,I (305618) wifi_receptor: RX 27 bytes: SEQ=1088;PAYLOAD=wifi-test,rx,,27,-40,100,1
+2026-10-22T20:00:49.560,receptor,INFO,,,log,,,-40,100,1
+2026-10-22T20:00:50.129,receptor,INFO,,"I (306638) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T20:00:50.131,receptor,INFO,1089,I (306638) wifi_receptor: RX 27 bytes: SEQ=1089;PAYLOAD=wifi-test,rx,,27,-46,100,1
+2026-10-22T20:00:50.131,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T20:00:51.154,receptor,INFO,,"I (307668) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T20:00:51.156,receptor,INFO,1090,I (307668) wifi_receptor: RX 27 bytes: SEQ=1090;PAYLOAD=wifi-test,rx,,27,-44,100,1
+2026-10-22T20:00:51.157,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T20:00:52.178,receptor,INFO,,"I (308688) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T20:00:53.566,receptor,INFO,1091,I (308688) wifi_receptor: RX 27 bytes: SEQ=1091;PAYLOAD=wifi-test,rx,,27,-45,100,1
+2026-10-22T20:00:53.567,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T20:00:53.568,receptor,INFO,,"I (309718) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T20:00:53.568,receptor,INFO,1092,I (309718) wifi_receptor: RX 27 bytes: SEQ=1092;PAYLOAD=wifi-test,rx,,27,-45,100,1
+2026-10-22T20:00:53.569,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T20:00:54.226,receptor,INFO,,"I (310738) wifi_receptor: Enlace WiFi: RSSI=-43 dBm, calidad=100%, canal=1",wifi_quality,,,-43,100,1
+2026-10-22T20:00:54.227,receptor,INFO,1093,I (310738) wifi_receptor: RX 27 bytes: SEQ=1093;PAYLOAD=wifi-test,rx,,27,-43,100,1
+2026-10-22T20:00:54.228,receptor,INFO,,,log,,,-43,100,1
+2026-10-22T20:00:55.255,receptor,INFO,,"I (311768) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T20:00:55.256,receptor,INFO,1094,I (311768) wifi_receptor: RX 27 bytes: SEQ=1094;PAYLOAD=wifi-test,rx,,27,-46,100,1
+2026-10-22T20:00:56.637,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T20:00:56.638,receptor,INFO,,"I (312788) wifi_receptor: Enlace WiFi: RSSI=-44 dBm, calidad=100%, canal=1",wifi_quality,,,-44,100,1
+2026-10-22T20:00:56.639,receptor,INFO,1095,I (312788) wifi_receptor: RX 27 bytes: SEQ=1095;PAYLOAD=wifi-test,rx,,27,-44,100,1
+2026-10-22T20:00:56.639,receptor,INFO,,,log,,,-44,100,1
+2026-10-22T20:00:57.298,receptor,INFO,,"I (313808) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T20:00:57.299,receptor,INFO,1096,I (313808) wifi_receptor: RX 27 bytes: SEQ=1096;PAYLOAD=wifi-test,rx,,27,-45,100,1
+2026-10-22T20:00:57.299,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T20:00:58.321,receptor,INFO,,"I (314838) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T20:00:58.323,receptor,INFO,1097,I (314838) wifi_receptor: RX 27 bytes: SEQ=1097;PAYLOAD=wifi-test,rx,,27,-45,100,1
+2026-10-22T20:00:58.323,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T20:00:59.665,receptor,INFO,,"I (315858) wifi_receptor: Enlace WiFi: RSSI=-38 dBm, calidad=100%, canal=1",wifi_quality,,,-38,100,1
+2026-10-22T20:00:59.666,receptor,INFO,1098,I (315858) wifi_receptor: RX 27 bytes: SEQ=1098;PAYLOAD=wifi-test,rx,,27,-38,100,1
+2026-10-22T20:00:59.667,receptor,INFO,,,log,,,-38,100,1
+2026-10-22T20:01:00.371,receptor,INFO,,"I (316888) wifi_receptor: Enlace WiFi: RSSI=-42 dBm, calidad=100%, canal=1",wifi_quality,,,-42,100,1
+2026-10-22T20:01:00.373,receptor,INFO,1099,I (316888) wifi_receptor: RX 27 bytes: SEQ=1099;PAYLOAD=wifi-test,rx,,27,-42,100,1
+2026-10-22T20:01:00.373,receptor,INFO,,,log,,,-42,100,1
+2026-10-22T20:01:01.394,receptor,INFO,,"I (317908) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T20:01:01.395,receptor,INFO,1100,I (317908) wifi_receptor: RX 27 bytes: SEQ=1100;PAYLOAD=wifi-test,rx,,27,-45,100,1
+2026-10-22T20:01:01.397,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T20:01:02.417,receptor,INFO,,"I (318928) wifi_receptor: Enlace WiFi: RSSI=-39 dBm, calidad=100%, canal=1",wifi_quality,,,-39,100,1
+2026-10-22T20:01:03.759,receptor,INFO,1101,I (318928) wifi_receptor: RX 27 bytes: SEQ=1101;PAYLOAD=wifi-test,rx,,27,-39,100,1
+2026-10-22T20:01:03.761,receptor,INFO,,,log,,,-39,100,1
+2026-10-22T20:01:03.761,receptor,INFO,,"I (319958) wifi_receptor: Enlace WiFi: RSSI=-45 dBm, calidad=100%, canal=1",wifi_quality,,,-45,100,1
+2026-10-22T20:01:03.762,receptor,INFO,1102,I (319958) wifi_receptor: RX 27 bytes: SEQ=1102;PAYLOAD=wifi-test,rx,,27,-45,100,1
+2026-10-22T20:01:03.763,receptor,INFO,,,log,,,-45,100,1
+2026-10-22T20:01:04.467,receptor,INFO,,"I (320978) wifi_receptor: Enlace WiFi: RSSI=-46 dBm, calidad=100%, canal=1",wifi_quality,,,-46,100,1
+2026-10-22T20:01:04.468,receptor,INFO,1103,I (320978) wifi_receptor: RX 27 bytes: SEQ=1103;PAYLOAD=wifi-test,rx,,27,-46,100,1
+2026-10-22T20:01:04.469,receptor,INFO,,,log,,,-46,100,1
+2026-10-22T20:01:05.490,receptor,INFO,,"I (321998) wifi_receptor: Enlace WiFi: RSSI=-47 dBm, calidad=100%, canal=1",wifi_quality,,,-47,100,1
+2026-10-22T20:01:05.491,receptor,INFO,1104,I (321998) wifi_receptor: RX 27 bytes: SEQ=1104;PAYLOAD=wifi-test,rx,,27,-47,100,1
+2026-10-22T20:01:06.839,receptor,INFO,,,log,,,-47,100,1

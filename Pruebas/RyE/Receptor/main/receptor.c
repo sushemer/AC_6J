@@ -87,10 +87,8 @@ static void print_capture_array(const char *name, bool ready_for_npn)
         }
 
         /*
-         * El VS1838B entrega la marca IR en nivel bajo. El emisor con
-         * transistor NPN necesita la marca en HIGH y el espacio en LOW.
-         * En la primera pareja la captura puede comenzar durante el estado
-         * inactivo; por eso se normalizan ambos niveles para el emisor.
+         * El VS1838B entrega la marca IR en nivel bajo. El emisor contransistor NPN necesita la marca en HIGH y el espacio en LOW.
+         * En la primera pareja la captura puede comenzar durante el estado inactivo; por eso se normalizan ambos niveles para el emisor.
          */
         if (ready_for_npn) {
             l0 = 1;

@@ -1,5 +1,4 @@
 # Emisor IR con tres botones — ESP32 DevKit V1
-
 Proyecto ESP-IDF para ESP32 DevKit V1 / WROOM-32. LED IR en GPIO32 mediante transistor,
 con portadora de 38 kHz.
 
@@ -22,9 +21,9 @@ Conecta cada botón entre su GPIO y GND. Se usan pull-ups internas:
 
 | Función | GPIO |
 |---|---:|
-| Subir | GPIO25 |
-| Bajar | GPIO26 |
-| Encendido/apagado | GPIO27 |
+| Subir | GPIO26 |
+| Bajar | GPIO27 |
+| Encendido/apagado | GPIO25 |
 
 Las capturas actuales de encendido y apagado a 67 °F están en `signal_on[]` y
 `signal_off[]` de `main/emisor.c`. El botón POWER alterna entre ambas tramas.

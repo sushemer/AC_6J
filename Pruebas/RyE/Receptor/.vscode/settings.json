@@ -13,5 +13,5 @@
       "--compile-commands-dir=c:\\Users\\SUSHEMER\\OneDrive\\Documentos\\GitHub\\TECLA\\AC-TEMP\\RyE\\Receptor\\build"
     ],
     "idf.flashType": "UART",
-    "idf.port": "COM5"
+    "idf.port": "COM4"
 }
